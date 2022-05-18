@@ -11,9 +11,19 @@ The former would offer their remaining products, which are still consumable, pri
 and the latter would browser in the app to find which shops are offering products. 
 
  
-\subsection*{Use cases}
+\subsection{Design Purpose}
 
-The following use cases were defined according to the main purpose of the application:
+The main purpose of this architecture is creating exploratory prototype. We aim to test it with potential users and
+regions to analyze the general acceptance and wishes of our stakeholders \cite{refbook:DSHC} and get a fast feedback. 
+
+This prototype will also make it feasible to identify unknown needs an wishes of the potential users, so we can eventually
+increase the scope of functionality. Exploring this domain will also provide us with information regarding the behavior 
+of our users when it comes to buying food that would be wasted, but is still consumable.
+
+\subsection{Primary Functionality}
+
+From the following use cases we will be able to define the primary functionality of our application and 
+furthermore identify its main quality attributes 
 
 % Object: put figure beside the table
 
@@ -32,6 +42,8 @@ The following use cases were defined according to the main purpose of the applic
     \end{tabularx}
 \end{table}
 
+Those use cases are also represented in the following use case diagram:
+
 \begin{figure}[htb]
     \centering
     \includegraphics[width=0.50\textwidth]{/home/bruno/git/Soft.Arch/assets/preliminary_use_case.png}
@@ -40,78 +52,99 @@ The following use cases were defined according to the main purpose of the applic
 \end{figure}
 
 
-\subsection*{Quality Attributes}
+\subsection{Quality Attributes}
+
+With the given use cases we will then be able to define the major quality attributes that are involved in the 
+development of this application. We want those qualities to be measurable and testable so we can verify if the 
+system meets the needs our stakeholders \cite{refbook:DSHC}.
 
 \begin{table}[H]
 \begin{tabularx}{\textwidth}{lcXc}
     \toprule
     ID & Quality Attribute & Scenario & Associated Use Case  \\
     \midrule
-    QA-1 & 123 & A client register their e-mail address and he can immediate browse in the app. & UC-1 \\
-    QA-2 & 123 & A client login in the app and he can immediate browse in the app. & UC-2 \\
-    QA-3 & 123 & A client choose a provider and place his order. After the confirmation
+    QA-1 & Performance & A client register their e-mail address and he can immediate browse in the app. & UC-1 \\
+    QA-2 & Performance & A client opens the app and he can immediate browse in the app. & UC-2 \\
+    QA-3 & Performance & A client choose a provider and place his order. After the confirmation
     of payment, a push-message is displayed in the app confirming the purchase. & UC-3 \\
-    QA-4 & 123 & A client register his credit card or select another payment method and the
+    QA-4 & \textit{[to be defined]} & A client register his credit card or select another payment method and the
     confirmation as soon as he confirmed with his provider. & UC-4 \\
-    QA-5 & 123 & A provider is able to register his company, specify the kind of products he offers and upload
+    QA-5 & Usability & A provider is able to register his company, specify the kind of products he offers and upload
     a logo or picture of his shop. & UC-05 \\
-    QA-6 & 123 & A provider is able to update in the app if he is offering for that day any product. &  UC-6 \\
+    QA-6 & Usability & A provider is able to update in the app if he is offering for that day any product. &  UC-6 \\
     \bottomrule
 \end{tabularx}
 \end{table}
 
+The defined quality attributes are represented in the following scenarios:
 
+\begin{table}[H]
+    \begin{tabularx}{\textwidth}{|c|X|}
+        \hline
+        \multicolumn{2}{c}{\textbf{Performance}} \\
+        \hline
+        \toprule
+        \multicolumn{1}{c}{Scenario} & \multicolumn{1}{c}{Value} \\
+        \midrule
+        Source & End user \\
+        Stimulus & wishes to create an account \\
+        Artifact & platform \\
+        Environment & runtime \\
+        Response & immediate access to the app \\
+        Response Measure & time between confirmation and access \\
+         & \\
+        Source & End user \\
+        Stimulus & wants to search fo restaurants or bakeries \\
+        Artifact & platform \\
+        Environment & peak period, between 6 and 7 pm on Friday \\
+        Response & immediate access to the offers \\
+        Response Measure & how quick does the user get an updated regarding availability of products \\
+        & \\
+        Source & End user \\
+        Stimulus & place an order \\
+        Artifact & platform \\
+        Environment & peak period, between 6 and 7 pm on Friday \\
+        Response & confirmation of the purchase after the payment \\
+        Response Measure & time between confirmation of the payment and confirmation of the order \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
 
+\begin{table}[H]
+    \begin{tabularx}{\textwidth}{|c|X|}
+        \hline
+        \multicolumn{2}{c}{\textbf{Usability}} \\
+        \hline
+        \toprule
+        \multicolumn{1}{c}{Scenario} & \multicolumn{1}{c}{Value} \\
+        \midrule
+        Source & Provider \\
+        Stimulus & wants to offer his remaining products in the app \\
+        Artifact & platform \\
+        Environment & working time, during afternoon \\
+        Response & offer available in the app \\
+        Response Measure & How long did the registration and upload process took? Were all necessary information
+        available in the app or did the provider need to search it outside the app? How long did the registration
+        process took? \\
+         & \\
+        Source & Registered provider \\
+        Stimulus & wants wants to make a last minute offer \\
+        Artifact & platform \\
+        Environment & peak period, between 6 and 7 pm on Friday \\
+        Response & immediate availability of the offer in the app \\
+        Response Measure & how long did it take for the provider to upload the offer? Was it easy to input all
+        necessary information like, quantity, location and take-away time? Can he do it without any burden? \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
 
-\begin{itemize}
-    \item \textit{Usuability}: Offering and selecting options should be intui
-    \item \textit{blablabla}
-    \item \textit{blablabla}
-\end{itemize}
+\subsection{Design Purpose}
 
+\textit{to be written}
 
-Check Add 3.0
-Check FAO for reasoning
-Define Drivers:
-
-\begin{itemize}
-    \item Design Purpose: prototype, check acceptance
-    \item Quality
-    \item Primary Functionality: realy first to get the system to start, food ordering, registering, offering
-    \item Constraints: laws, deadlines, standards
-    \item Concerns: can be left blank
-\end{itemize}
-
-pick 3 qualities
-
-Quality: A ==> Create Scenarios ==> Prioritize High, Medium, Low for (Arch, Customer)
-Quality: usability ==> Create Scenarios ==> Prioritize (for Arch, for Customer) 
-Quality: availability ==> Create Scenarios 
-Quality: modifiability ==> Create Scenarios
-Quality: security ==> Create Scenarios
-
+%https://medium.com/@janerikfra/architectural-drivers-in-modern-software-architecture-cb7a42527bf2 (important)
 % https://www.ecs.csun.edu/~rlingard/COMP684/Example2SoftArch.htm
 % https://upcommons.upc.edu/bitstream/handle/2099.1/18373/90629.pdf
-
-% \subsection*{Qualities}
-% Usability
-% \begin{itemize}
-%     \item Design Purpose: prototype, check acceptance
-
-% \end{itemize}
-
-% UC-1: Register - Users register themselfeves
-% UC-2: Login - User should be able to login themselves
-% UC-3: Upload offer - Restaurants upload in the app that they are offering products
-% UC-4: Purchase - Clients pick a Restaurant and purchase the product
-% UC-5: 
-
-
-
-% Usuability
-% QA1 - Usuability - Users should be able to register themselfeves easily
-% QA2 - Usuability - The interfaces are intuitive to use (learning)
-% QA3 - Performance - Users recieve answer quickly after taking decisions
 
 % Registration Process for Clients QA1
 % Registration Process for Restaurants/Backery QA2
@@ -123,9 +156,6 @@ Quality: security ==> Create Scenarios
 
 % Performance
 % After upload offer, how long until displyed QA8
-
-
-
 
 % Usuability
 % Registration for Client: using existing account or Name/email
@@ -139,53 +169,5 @@ Quality: security ==> Create Scenarios
 
 
 % Availability
-
-% Source: Client
-% Stimulus: Register
-% System: Federation (using existing logins from other platforms, google/facebook etc)
-% Response: Accounted create + display options
-% Response Measure: Register should be performed only once
-
-
-% Source: Client
-% Stimulus: open application
-% System: Mobile-Application
-% Response: Display available options
-% Response Measure: options are updated every xx Minutes
-
-
-% Source: Client
-% Stimulus: choose restaurant/bakery
-% System: Mobile-Application
-% Response: Push-message with confirmation
-% Response Measure: The purchase is automatically displayed
-
-
-% Source: Restaurant
-% Stimulus: Registers
-% System: Mobile-Application
-% Response: Restaurant Name
-% Response Measure: After sending info, available on the application in up to 5 minutes
-
-% Source: Restaurant
-% Stimulus: Upload offer
-% System: Mobile-Application
-% Response: On the app the offers available in the restaurant/bakery are displayed
-% Response Measure: After sending info, available on the application in up to 5 minutes
-
-
-% Source: Client
-% Stimulus: Purchase
-% System: Mobile-Application
-% Response: Restaurant/bakery receive order from client
-% Response Measure: Time between payment and confirmation to restaurant/bakery
-
-
-% Source: Restaurant
-% Stimulus: remove offer
-% System: Mobile-Application
-% Response: Customer and Restaurant no longer see the Item in their List
-% Response Measure: Updates should be delivered within 2 minutes after sending
-
 
 % Modifiability

@@ -4,40 +4,27 @@
 \newacronym{fao}{FAO}{Food and Agriculture Organization of the United Nations}
 \newacronym{un}{UN}{United Nations}
 
-% \fancypagestyle{mylandscape}{
-% \fancyhf{} %Clears the header/footer
-% \fancyfoot{% Footer
-% \makebox[\textwidth][r]{% Right
-%   \rlap{\hspace{2cm}% Push out of margin by \footskip
-%     \smash{% Remove vertical height
-%       \raisebox{4.87in}{% Raise vertically
-%         \rotatebox{90}{\thepage}}}}}}% Rotate counter-clockwise
-% \renewcommand{\headrulewidth}{0pt}% No header rule
-% \renewcommand{\footrulewidth}{0pt}% No footer rule
-% }
-
-
 \begin{document}
     \include{titelblat}
     \tableofcontents
-    \newpage
-    \addcontentsline{toc}{section}{\listfigurename}
-    \listoffigures
+    %\newpage
+    %\addcontentsline{toc}{section}{\listfigurename}
+    %\listoffigures
     \newpage
     \clearpage
-    \printglossary[type=acronym,title=Abkürzungsverzeichnis,toctitle=Abkürzungsverzeichnis]
-   \clearpage
+    \printglossary[type=acronym,title=Abbreviations,toctitle=Abbreviations]
+    \clearpage
     \include{1_Introduction_goals}
-    \include{2_Constraints}
-    \include{3_Context_and_Scope}
-    \include{4_Solution_Strategy}
-    \include{5_Building_Block_View}
-    \include{6_Runtime_View}
-    \include{7_Deployment_View}
-    \include{6_Crosscutting_Concept}
-    \include{9_Architectural_Decisions}
-    \include{10_Quality_Requirements}
-    \include{11_Risk_and_Technical_Debt}
+    %\include{2_Constraints}
+    %\include{3_Context_and_Scope}
+    %\include{4_Solution_Strategy}
+    %\include{5_Building_Block_View}
+    %\include{6_Runtime_View}
+    %\include{7_Deployment_View}
+    %\include{6_Crosscutting_Concept}
+    %\include{9_Architectural_Decisions}
+    %\include{10_Quality_Requirements}
+    %\include{11_Risk_and_Technical_Debt}
     %\include{12_Glossary}
     \nocite{*}
     \bibliography{reference}
