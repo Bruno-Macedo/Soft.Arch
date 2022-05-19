@@ -4,6 +4,42 @@
 \newacronym{fao}{FAO}{Food and Agriculture Organization of the United Nations}
 \newacronym{un}{UN}{United Nations}
 
+\newglossaryentry{app} {
+    name={App},
+    description={The word will be used here to reference the mobile application to be developed}
+}
+\newglossaryentry{stakeholder} {
+    name={Stakeholder},
+    plural={stakeholders},
+    description={Describe all kind of potential person or entity that may have interest using the app}
+}
+\newglossaryentry{client} {
+    name={Client},
+    plural={clients},
+    description={Since we have two different kind of stakeholder that will use the app, the word
+                 client will define the stakeholder that place an order in the app}
+}
+\newglossaryentry{provider} {
+    name={Provider},
+    plural={provider},
+    description={The second kind of stakeholders are those who offer their products. They can begin
+                restaurants, bakeries, pastries and similar}
+}
+
+\newglossaryentry{upload} {
+    name={Upload},
+    description={Will designate the act of pushing textual or visual content into the app. It will
+                be mostly done by any provider}
+}
+
+\newglossaryentry{register} {
+    name={Register},
+    description={describe the act of inputting name, e-mail, company name, product or any other kind of
+    textual data used to identify a stakeholder or a product}
+}
+
+
+
 \begin{document}
     \include{titelblat}
     \tableofcontents
@@ -13,6 +49,10 @@
     \newpage
     \clearpage
     \printglossary[type=acronym,title=Abbreviations,toctitle=Abbreviations]
+    \clearpage
+    \newpage
+    \clearpage
+    \printglossary[title=Glossary,toctitle=Glossary]
     \clearpage
     \include{1_Introduction_goals}
     %\include{2_Constraints}

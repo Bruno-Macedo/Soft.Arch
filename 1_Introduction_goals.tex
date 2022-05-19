@@ -13,17 +13,17 @@ and the latter would browser in the app to find which shops are offering product
  
 \subsection{Design Purpose}
 
-The main purpose of this architecture is creating exploratory prototype. We aim to test it with potential users and
-regions to analyze the general acceptance and wishes of our stakeholders \cite{refbook:DSHC} and get a fast feedback. 
+The main purpose of this architecture is creating exploratory prototype of an \gls{app}. We aim to test it with potential 
+\gls{stakeholder} and regions to analyze the general their acceptance and wishes \cite{refbook:DSHC} and get a fast feedback. 
 
-This prototype will also make it feasible to identify unknown needs an wishes of the potential users, so we can eventually
+This prototype will also make it feasible to identify unknown needs an wishes of the potential \gls{stakeholder}, so we can eventually
 increase the scope of functionality. Exploring this domain will also provide us with information regarding the behavior 
-of our users when it comes to buying food that would be wasted, but is still consumable.
+of our \gls{stakeholder} when it comes to buying and serving food that would be wasted, but is still consumable.
 
 \subsection{Primary Functionality}
 
-From the following use cases we will be able to define the primary functionality of our application and 
-furthermore identify its main quality attributes 
+From the following use cases we will be able to define the primary functionality of our application and furthermore 
+identify its main quality attributes 
 
 % Object: put figure beside the table
 
@@ -32,12 +32,12 @@ furthermore identify its main quality attributes
     \toprule
     Use Case & Description  \\
     \midrule
-    UC-1: Register as client & The user register an e-mail address.\\
-    UC-2: Login & The user logins in to the system. \\
-    UC-3: Place order & The user chooses a provider. \\
-    UC-4: Register payment & The user register a payment method. \\
-    UC-5: Register as provider & The provider register their facility and products. \\
-    UC-6: Update availability & The provider upload their availability to provide a product. \\
+    UC-1: Register as \gls{client} & The = \gls{client} register an e-mail address.\\
+    UC-2: Login & The \gls{client} logins in to the system. \\
+    UC-3: Place an order & The \gls{client} chooses a \gls{provider}. \\
+    UC-4: Register payment & The \gls{client} register a payment method. \\
+    UC-5: Register as \gls{provider} & The \gls{provider} register their facility and products. \\
+    UC-6: Update availability & The \gls{provider} upload their availability to provide a product. \\
     \bottomrule
     \end{tabularx}
 \end{table}
@@ -64,15 +64,15 @@ system meets the needs our stakeholders \cite{refbook:DSHC}.
         \toprule
         ID & Quality Attribute & Scenario & Associated Use Case  \\
         \midrule
-        QA-1 & Performance & A client register their e-mail address and he can immediate browse in the app. & UC-1 \\
-        QA-2 & Performance & A client opens the app and he can immediate browse in the app. & UC-2 \\
-        QA-3 & Performance & A client choose a provider and place his order. After the confirmation
+        QA-1 & Performance & A \gls{client} register their e-mail address and he can immediate browse in the app. & UC-1 \\
+        QA-2 & Performance & A \gls{client} opens the app and he can immediate browse in the app. & UC-2 \\
+        QA-3 & Performance & A \gls{client} choose a \gls{provider} and place his order. After the confirmation
         of payment, a push-message is displayed in the app confirming the purchase. & UC-3 \\
-        QA-4 & \textit{[to be defined]} & A client register his credit card or select another payment method and the
-        confirmation as soon as he confirmed with his provider. & UC-4 \\
-        QA-5 & Usability & A provider is able to register his company, specify the kind of products he offers and upload
+        QA-4 & \textit{[to be defined]} & A \gls{client}  register his credit card or select another payment method and the
+        confirmation as soon as he confirmed with his \gls{provider}. & UC-4 \\
+        QA-5 & Usability & A \gls{provider} is able to register his company, specify the kind of products he offers and upload
         a logo or picture of his shop. & UC-05 \\
-        QA-6 & Usability & A provider is able to update in the app if he is offering for that day any product. &  UC-6 \\
+        QA-6 & Usability & A \gls{provider} is able to update in the app if he is offering for that day any product. &  UC-6 \\
         \bottomrule
     \end{tabularx}
 \end{table}
@@ -88,21 +88,21 @@ The defined quality attributes are represented in the following scenarios:
         \toprule
         \multicolumn{1}{c}{Scenario} & \multicolumn{1}{c}{Value} \\
         \midrule
-        Source & End user \\
+        Source & \gls{client}  \\
         Stimulus & wishes to create an account \\
         Artifact & platform \\
         Environment & runtime \\
         Response & immediate access to the app \\
         Response Measure & time between confirmation and access \\
          & \\
-        Source & End user \\
+        Source & \gls{client}  \\
         Stimulus & wants to search fo restaurants or bakeries \\
         Artifact & platform \\
         Environment & peak period, between 6 and 7 pm on Friday \\
         Response & immediate access to the offers \\
-        Response Measure & how quick does the user get an updated regarding availability of products \\
+        Response Measure & how quick does the \gls{client}  get an updated regarding availability of products \\
         & \\
-        Source & End user \\
+        Source & \gls{client}  \\
         Stimulus & place an order \\
         Artifact & platform \\
         Environment & peak period, between 6 and 7 pm on Friday \\
@@ -122,29 +122,56 @@ The defined quality attributes are represented in the following scenarios:
         \toprule
         \multicolumn{1}{c}{Scenario} & \multicolumn{1}{c}{Value} \\
         \midrule
-        Source & Provider \\
+        Source & \gls{provider} \\
         Stimulus & wants to offer his remaining products in the app \\
         Artifact & platform \\
         Environment & working time, during afternoon \\
         Response & offer available in the app \\
         Response Measure & How long did the registration and upload process took? Were all necessary information
-        available in the app or did the provider need to search it outside the app? How long did the registration
+        available in the app or did the \gls{provider} need to search it outside the app? How long did the registration
         process took? \\
          & \\
-        Source & Registered provider \\
+        Source & Registered \gls{provider} \\
         Stimulus & wants wants to make a last minute offer \\
         Artifact & platform \\
         Environment & peak period, between 6 and 7 pm on Friday \\
         Response & immediate availability of the offer in the app \\
-        Response Measure & how long did it take for the provider to upload the offer? Was it easy to input all
+        Response Measure & how long did it take for the \gls{provider} to upload the offer? Was it easy to input all
         necessary information like, quantity, location and take-away time? Can he do it without any burden? \\
         \bottomrule
     \end{tabularx}
 \end{table}
 
-\subsection{Design Purpose}
+\subsection{Constraints}
 
-\textit{to be written}
+In general, we can say that constrains are burdens to the development of the project. They define a set of non-negotiable
+rules that must be exist \cite{refonline:EFAD}. 
+
+In this project we must distinguish between Technical and Business Constraints. The former describes specific element
+of the project, like programming language, released platform (operational systems) and technical decisions related to 
+the functionalities. The latter involve management elements like, time, budget and team \cite{refonline:EFAD}.
+
+
+\begin{table}[htb]
+    \setstretch{1.0}
+    \begin{tabularx}{\textwidth}{lclX}
+        \toprule
+        ID & Constraint & Category & Description \\
+        \midrule
+        CT-1 & Programming Language & Technical & Java, Kotlin, iOS, Swift \\
+        CT-2 & Platform & Technical & Android, IoS \\
+        CT-3 & Payment & Technical & Creating own framework or integrating with existing one (Google Pay, Apple Pay, PayPall) \\
+        CT-4 & Login & Technical & Using or not federation or creating own login system  \\
+        CT-5 & Time to first prototype release & Business & How long until a first prototype that can be tested wir real users  \\
+        CT-6 & Testing time & Business & Time window to test general acceptance \\
+        CT-7 & Budget & Business & To maintain a team during the testing phase \\
+        CT-8 & Team & Business & To analyze the main usage of the app for further development \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+
+
 
 %https://medium.com/@janerikfra/architectural-drivers-in-modern-software-architecture-cb7a42527bf2 (important)
 % https://www.ecs.csun.edu/~rlingard/COMP684/Example2SoftArch.htm
