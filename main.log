@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2022.5.12)  23 MAY 2022 09:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2022.5.12)  26 MAY 2022 21:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -851,7 +851,7 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \@thisruleclass=\count148
 \@lastruleclass=\count149
 \@thisrulewidth=\dimen152
-)) (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
 \TX@col@width=\dimen153
 \TX@old@table=\dimen154
@@ -860,6 +860,10 @@ Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
 \TX@delta=\dimen157
 \TX@cols=\count150
 \TX@ftn=\toks39
+)) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+\Gin@req@height=\dimen158
+\Gin@req@width=\dimen159
 )
 \glswrite=\write4
 \glo@main@file=\write5
@@ -870,25 +874,25 @@ Package glossaries Info: Writing glossary file main.glo on input line 2.
 \openout6 = `main.acn'.
 
 Package glossaries Info: Writing glossary file main.acn on input line 2.
- (/home/bruno/git/Soft.Arch/main.aux)
+ (/home/bruno/git/Soft.Arch/main.aux (/home/bruno/git/Soft.Arch/titelblat.aux) (/home/bruno/git/Soft.Arch/1_Introduction_goals.aux) (/home/bruno/git/Soft.Arch/2_4+1_arch_view.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
 \AtBeginShipoutBox=\box37
-Package hyperref Info: Link coloring OFF on input line 43.
+Package hyperref Info: Link coloring OFF on input line 54.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -896,22 +900,23 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count151
 )
-LaTeX Info: Redefining \ref on input line 43.
-LaTeX Info: Redefining \pageref on input line 43.
-LaTeX Info: Redefining \nameref on input line 43.
+LaTeX Info: Redefining \ref on input line 54.
+LaTeX Info: Redefining \pageref on input line 54.
+LaTeX Info: Redefining \nameref on input line 54.
+ (/home/bruno/git/Soft.Arch/main.out) (/home/bruno/git/Soft.Arch/main.out)
 \@outlinefile=\write7
 \openout7 = `main.out'.
 
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count152
-\scratchdimen=\dimen158
+\scratchdimen=\dimen160
 \scratchbox=\box38
 \nofMPsegments=\count153
 \nofMParguments=\count154
 \everyMPshowfont=\toks40
 \MPscratchCnt=\count155
-\MPscratchDim=\dimen159
+\MPscratchDim=\dimen161
 \MPnumerator=\count156
 \makeMPintoPDFobject=\count157
 \everyMPtoPDFconversion=\toks41
@@ -968,10 +973,10 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 45.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 56.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
+) (/home/bruno/git/Soft.Arch/main.toc)
 \tf@toc=\write8
 \openout8 = `main.toc'.
 
@@ -989,131 +994,101 @@ No file main.gls.
 ]
 \openout2 = `1_Introduction_goals.aux'.
 
- (/home/bruno/git/Soft.Arch/1_Introduction_goals.tex
-
-LaTeX Warning: Citation `refart:FAOFW' on page 5 undefined on input line 3.
+ (/home/bruno/git/Soft.Arch/1_Introduction_goals.tex [5
 
 
-LaTeX Warning: Citation `refart:AAHWH' on page 5 undefined on input line 4.
+]
+</home/bruno/git/Soft.Arch/assets/preliminary_use_case.png, id=125, 521.95pt x 393.47pt>
+File: /home/bruno/git/Soft.Arch/assets/preliminary_use_case.png Graphic file (type png)
+<use /home/bruno/git/Soft.Arch/assets/preliminary_use_case.png>
+Package pdftex.def Info: /home/bruno/git/Soft.Arch/assets/preliminary_use_case.png  used on input line 49.
+(pdftex.def)             Requested size: 376.42575pt x 283.77248pt.
+ [6pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.60 
+      </home/bruno/git/Soft.Arch/assets/preliminary_use_case.png>] [7] [8] [9]) [10]
+\openout2 = `2_4+1_arch_view.aux'.
 
-LaTeX Warning: Citation `refart:UNSP' on page 5 undefined on input line 7.
-
-
-LaTeX Warning: Citation `refbook:DSHC' on page 5 undefined on input line 17.
-
-Runaway argument?
-width=0.50\textwidth ]{/home/bruno/git/Soft.Arch/assets/preliminary_u\ETC.
-/home/bruno/git/Soft.Arch/1_Introduction_goals.tex:53: Paragraph ended before \Gin@iii was complete.
-<to be read again> 
-                   \par 
-l.53 
-     
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-
-LaTeX Warning: Citation `refbook:DSHC' on page 5 undefined on input line 59.
-
-
-LaTeX Warning: Citation `refonline:EFAD' on page 5 undefined on input line 148.
-
-
-LaTeX Warning: Citation `refonline:EFAD' on page 5 undefined on input line 152.
-
-
-/home/bruno/git/Soft.Arch/1_Introduction_goals.tex:155: LaTeX Error: Not in outer par mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.155 \begin{table}[htb]
-                        
-You've lost some text.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+ (/home/bruno/git/Soft.Arch/2_4+1_arch_view.tex
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 10.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-No file main.bbl.
-
-/home/bruno/git/Soft.Arch/main.tex:73: LaTeX Error: \begin{figure} on input line 47 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.73 \end{document}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
-(/home/bruno/git/Soft.Arch/main.aux (/home/bruno/git/Soft.Arch/titelblat.aux) (/home/bruno/git/Soft.Arch/1_Introduction_goals.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 73.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 73.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 10.
+ [11
 
 
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+]
+</home/bruno/git/Soft.Arch/assets/login_AC.jpg, id=219, 834.11626pt x 492.84125pt>
+File: /home/bruno/git/Soft.Arch/assets/login_AC.jpg Graphic file (type jpg)
+<use /home/bruno/git/Soft.Arch/assets/login_AC.jpg>
+Package pdftex.def Info: /home/bruno/git/Soft.Arch/assets/login_AC.jpg  used on input line 23.
+(pdftex.def)             Requested size: 418.25368pt x 247.12689pt.
+ [12pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.28 \newpage
+              </home/bruno/git/Soft.Arch/assets/login_AC.jpg>]
+</home/bruno/git/Soft.Arch/assets/classes_CD.jpg, id=227, 953.5625pt x 503.8825pt>
+File: /home/bruno/git/Soft.Arch/assets/classes_CD.jpg Graphic file (type jpg)
+<use /home/bruno/git/Soft.Arch/assets/classes_CD.jpg>
+Package pdftex.def Info: /home/bruno/git/Soft.Arch/assets/classes_CD.jpg  used on input line 36.
+(pdftex.def)             Requested size: 418.25368pt x 221.01701pt.
+) [13pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 
-LaTeX Warning: There were undefined references.
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.69     \include{2_4+1_arch_view}
+                                   </home/bruno/git/Soft.Arch/assets/classes_CD.jpg>] (/home/bruno/git/Soft.Arch/main.bbl
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 8.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+))
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
+ [14
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
-/home/bruno/git/Soft.Arch/main.tex:73: You can't use `\end' in internal vertical mode.
-\enddocument ...es \z@ \Call@AtVeryVeryEnd \@@end 
-                                                  
-l.73 \end{document}
-                   
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-/home/bruno/git/Soft.Arch/main.tex:73: LaTeX Error: \begin{figure} on input line 47 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.73 \end{document}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-/home/bruno/git/Soft.Arch/main.tex:73: Missing } inserted.
-<inserted text> 
-                }
-l.73 \end{document}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-)
-! Emergency stop.
-<*> /home/bruno/git/Soft.Arch/main.tex
-                                      
-*** (job aborted, no legal \end found)
-
- 
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
+ (/home/bruno/git/Soft.Arch/main.aux (/home/bruno/git/Soft.Arch/titelblat.aux) (/home/bruno/git/Soft.Arch/1_Introduction_goals.aux) (/home/bruno/git/Soft.Arch/2_4+1_arch_view.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 381BA1FCF404DA8C8626E0510DCCE016;563.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
+ ) 
 Here is how much of TeX's memory you used:
- 16160 strings out of 494871
- 268005 string characters out of 6178382
- 501956 words of memory out of 5000000
- 19213 multiletter control sequences out of 15000+600000
- 14692 words of font info for 36 fonts, out of 8000000 for 9000
+ 16445 strings out of 494871
+ 274225 string characters out of 6178382
+ 495400 words of memory out of 5000000
+ 19423 multiletter control sequences out of 15000+600000
+ 15632 words of font info for 39 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 58i,12n,56p,8874b,596s stack positions out of 5000i,500n,10000p,200000b,80000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 58i,10n,56p,8874b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{glo:class\040diagram} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:activity\040diagram} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:provider} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:client} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:stakeholder} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:app} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:un} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:fao} has been referenced but does not exist, replaced by a fixed one
+
+ </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600pk> </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk> </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1095.600pk> </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1200.600pk> </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1095.600pk> </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1440.600pk> </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on /home/bruno/git/Soft.Arch/main.pdf (14 pages, 277612 bytes).
+PDF statistics:
+ 607 PDF objects out of 1000 (max. 8388607)
+ 229 compressed objects within 3 object streams
+ 45 named destinations out of 1000 (max. 500000)
+ 88 words of extra memory for PDF output out of 10000 (max. 10000000)
+
