@@ -1,0 +1,10 @@
+name: GitHub Actions Demo
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Compile latex
+        run: |
+          ls ${{ github.workspace }}
+      - run: latexcompile -b -r -g -s ../../main.tex
