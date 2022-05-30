@@ -11,26 +11,5 @@ jobs:
         with:
           root_file: main.tex
           compiler: pdflatex
-          args: -interaction=nonstopmode -shell-escape
-      - name: create glossar/akronym
-        uses: dante-ev/latex-action@latest
-        with:
-          root_file: main
-          compiler: makeglossaries
-      - name: pdflatex main
-        uses: dante-ev/latex-action@latest
-        with:
-          root_file: main.tex
-          compiler: pdflatex
-          args: -interaction=nonstopmode -shell-escape        
-      - name: bibtex main
-        uses: dante-ev/latex-action@latest
-        with:
-          root_file: main.aux
-          compiler: bibtex
-      - name: pdflatex main
-        uses: dante-ev/latex-action@latest
-        with:
-          root_file: main.tex
-          compiler: pdflatex
-          args: -interaction=nonstopmode -shell-escape
+          args: -interecation=nonstopmode
+
