@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2022.5.12)  30 MAY 2022 23:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2022.5.12)  30 MAY 2022 23:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -982,7 +982,9 @@ File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 
  [2
 
-] (/home/bruno/git/Soft.Arch/main.acr) [3
+]
+No file main.acr.
+[3
 
 ]
 No file main.gls.
@@ -996,7 +998,7 @@ No file main.gls.
 
 
 ]
-<assets/preliminary_use_case.png, id=131, 521.95pt x 393.47pt>
+<assets/preliminary_use_case.png, id=125, 521.95pt x 393.47pt>
 File: assets/preliminary_use_case.png Graphic file (type png)
 <use assets/preliminary_use_case.png>
 Package pdftex.def Info: assets/preliminary_use_case.png  used on input line 49.
@@ -1020,7 +1022,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 
 
 ]
-<assets/login_AC.jpg, id=225, 834.11626pt x 492.84125pt>
+<assets/login_AC.jpg, id=219, 834.11626pt x 492.84125pt>
 File: assets/login_AC.jpg Graphic file (type jpg)
 <use assets/login_AC.jpg>
 Package pdftex.def Info: assets/login_AC.jpg  used on input line 23.
@@ -1031,10 +1033,10 @@ Package pdftex.def Info: assets/login_AC.jpg  used on input line 23.
                                                   \fi \fi 
 l.28 \newpage
               </home/bruno/git/Soft.Arch/assets/login_AC.jpg>]
-</home/bruno/git/Soft.Arch/assets/classes_CD.jpg, id=233, 953.5625pt x 503.8825pt>
-File: /home/bruno/git/Soft.Arch/assets/classes_CD.jpg Graphic file (type jpg)
-<use /home/bruno/git/Soft.Arch/assets/classes_CD.jpg>
-Package pdftex.def Info: /home/bruno/git/Soft.Arch/assets/classes_CD.jpg  used on input line 36.
+<assets/classes_CD.jpg, id=227, 953.5625pt x 503.8825pt>
+File: assets/classes_CD.jpg Graphic file (type jpg)
+<use assets/classes_CD.jpg>
+Package pdftex.def Info: assets/classes_CD.jpg  used on input line 36.
 (pdftex.def)             Requested size: 418.25368pt x 221.01701pt.
 ) [13pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 
@@ -1055,14 +1057,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6050ED2A6A8DB5DB5F5457F131BB261D;613.
+(rerunfilecheck)             Checksum: 381BA1FCF404DA8C8626E0510DCCE016;563.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
  ) 
 Here is how much of TeX's memory you used:
- 16453 strings out of 494871
- 274155 string characters out of 6178382
+ 16445 strings out of 494871
+ 273887 string characters out of 6178382
  495400 words of memory out of 5000000
- 19426 multiletter control sequences out of 15000+600000
+ 19423 multiletter control sequences out of 15000+600000
  15632 words of font info for 39 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  58i,10n,56p,8874b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1078,11 +1080,15 @@ pdfTeX warning (dest): name{glo:stakeholder} has been referenced but does not ex
 
 pdfTeX warning (dest): name{glo:app} has been referenced but does not exist, replaced by a fixed one
 
+pdfTeX warning (dest): name{glo:un} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:fao} has been referenced but does not exist, replaced by a fixed one
+
  </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600pk> </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk> </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1095.600pk> </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1200.600pk> </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1095.600pk> </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1440.600pk> </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on /home/bruno/git/Soft.Arch/main.pdf (14 pages, 280270 bytes).
+Output written on /home/bruno/git/Soft.Arch/main.pdf (14 pages, 277612 bytes).
 PDF statistics:
- 620 PDF objects out of 1000 (max. 8388607)
- 235 compressed objects within 3 object streams
- 47 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 607 PDF objects out of 1000 (max. 8388607)
+ 229 compressed objects within 3 object streams
+ 45 named destinations out of 1000 (max. 500000)
+ 88 words of extra memory for PDF output out of 10000 (max. 10000000)
 
