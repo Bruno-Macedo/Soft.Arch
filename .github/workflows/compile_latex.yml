@@ -8,6 +8,6 @@ jobs:
         run: |
           ls ${{ github.workspace }}
           echo "Running latex"
-          ls "${GITHUB_WORKSPACE}"/.github/latexcompile.sh
-          ls "${GITHUB_WORKSPACE}"/main.tex
+          echo "${GITHUB_WORKSPACE}"
+
           
