@@ -1,0 +1,10 @@
+name: GitHub Actions Demo
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+  runs-on: ubuntu-latest
+  steps:
+    - run: echo "Job created successfully bla bla bla"
+    - name: List all existing files
+      run: ls {{ github.workspace }}
+    - run: echo "Job status is {{ job.status }}."
