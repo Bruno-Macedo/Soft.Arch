@@ -17,21 +17,12 @@ jobs:
         with:
           root_file: main
           compiler: makeglossaries
-      - name: 4 pdflatex main
-        uses: dante-ev/latex-action@latest
-        with:
-          root_file: main.tex
-          compiler: pdflatex
-          args: -interaction=nonstopmode       
-      - name: 5 bibtex main
+      - name: bibtex main
         uses: dante-ev/latex-action@latest
         with:
           root_file: main.aux
           compiler: bibtex
-      - name: 6 pdflatex main
-        uses: dante-ev/latex-action@latest
-        with:
-          root_file: main.tex
-          compiler: pdflatex
-          args: -interaction=nonstopmode
+          
+          
+          
 
