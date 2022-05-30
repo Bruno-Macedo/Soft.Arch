@@ -8,6 +8,6 @@ jobs:
         run: |
           ls ${{ github.workspace }}
           echo "Running latex"
-          chmod +x "${GITHUB_WORKSPACE}/.github/latexcompile.sh
-          ${GITHUB_WORKSPACE}/.github/latexcompile.sh -b -r -g -s ${GITHUB_WORKSPACE}/main.tex
+          chmod +x "${GITHUB_WORKSPACE}"/.github/latexcompile.sh
+          "${GITHUB_WORKSPACE}"/.github/latexcompile.sh -b -r -g -s "${GITHUB_WORKSPACE}"/main.tex
           
