@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 \glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
 \begin{theglossary}\glossaryheader
 \glsgroupheading{F}\relax \glsresetentrylist %
@@ -7,3 +8,6 @@
 \glossentry{un}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{5}}}%
 \end{theglossary}\glossarypostamble
+=======
+\null
+>>>>>>> c30a18d8d82b276b26da7b97f01ff35e09d2e286
