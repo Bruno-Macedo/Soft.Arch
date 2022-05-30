@@ -9,7 +9,7 @@ jobs:
         run: |
           echo "Running latex"
           chmod +x latexcompile
-          latexcompile -b -r -g -s main.tex
+          ./latexcompile -b -r -g -s main.tex
 
 
           
