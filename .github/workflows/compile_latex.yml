@@ -5,11 +5,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: LaTeX compilation
+        uses: dante-ev/latex-action@2021-A
       - name: Compile latex
         run: |
           echo "Running latex"
           chmod +x latexcompile
-          ./latexcompile -b -r -g -s main.tex
+          ./latexcompile -b -r -g main.tex
 
 
           
