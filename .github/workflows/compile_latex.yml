@@ -7,9 +7,9 @@ jobs:
       - uses: actions/checkout@v2
       - name: Compile latex
         run: |
-          ls ${{ github.workspace }}/.github/workflows
           echo "Running latex"
-          echo ${{ github.workspace }}
-          ls
+          chmod +x latexcompile
+          latexcompile -b -r -g -s main.tex
+
 
           
