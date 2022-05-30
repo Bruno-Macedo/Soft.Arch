@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: Compile latex
         run: |
-          ls "${ github.workspace }/.github/workflows/"
+          ls ${{ github.workspace }}
           echo "Running latex"
           echo ${{ GITHUB_WORKSPACE }}
           ls
