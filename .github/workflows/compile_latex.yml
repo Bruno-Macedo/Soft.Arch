@@ -1,17 +1,36 @@
-name: GitHub Actions Demo
+name: Build LaTeX document
 on: [push]
 jobs:
-  Explore-GitHub-Actions:
+  build_latex:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: LaTeX compilation
-        uses: dante-ev/latex-action@2021-A
-      - name: Compile latex
-        run: |
-          echo "Running latex"
-          chmod +x latexcompile
-          ./latexcompile -b -r -g main.tex
-
-
-          
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+      - name: pdflatex main
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: main.tex
+          compiler: pdflatex
+          args: -interaction=nonstopmode -shell-escape
+      - name: create glossar/akronym
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: main
+          compiler: makeglossaries
+      - name: pdflatex main
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: main.tex
+          compiler: pdflatex
+          args: -interaction=nonstopmode -shell-escape        
+      - name: bibtex main
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: main.aux
+          compiler: bibtex
+      - name: pdflatex main
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: main.tex
+          compiler: pdflatex
+          args: -interaction=nonstopmode -shell-escape
