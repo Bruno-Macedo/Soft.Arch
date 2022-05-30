@@ -62,17 +62,20 @@ AUXDATEI=$(basename ${1} 2> /dev/null | awk -F "." '{print $1}')".aux"
 #echo "Dateiname: ${AUXDATEI}"
 
 # Ueberpruefung, ob mindestens ein Argument/Datei eingegeben wurden.
-if [[ "${#}" -lt 1 ]] 
-then
-    usage
-fi
+# if [[ "${#}" -lt 0 ]] 
+# then
+#     usage
+# fi
 
-# Die Parameter muessen .tex Datei sein
-if [[ ${@} != *.tex ]]
-then
-    echo "Die eigegebenen Dateien muessen von Typ .tex sein" >&2
-    exit 1
-fi
+# # Die Parameter muessen .tex Datei sein
+# if [[ ${@} != *.tex ]]
+# then
+#     echo "Die eigegebenen Dateien muessen von Typ .tex sein" >&2
+#     exit 1
+# fi
+
+TEXDATEI="main.tex"
+echo "textdatei: " $TEXTDATEI
 
 # Kompilierung von .tex Datei und Erzeugung einer .pdf Datei: ${TEXDATEI}"
 pdflatex "${TEXDATEI}" &> /dev/null
