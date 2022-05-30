@@ -128,7 +128,7 @@ then
     echo "Loeschen von erstellten Dateien aktiviert."
     echo "Loeschen von Folgende Datei: ${DATEILOESCHEN}"
       
-    rm ${DATEILOESCHEN} 
+    rm -rf ${DATEILOESCHEN} 
     fehlermeldung "Datei ${DATEIZULOESCHEN} koennte nicht geloescht werden."
 fi
 
