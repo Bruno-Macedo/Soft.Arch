@@ -4,12 +4,34 @@ jobs:
   build_latex:
     runs-on: ubuntu-latest
     steps:
-      - name: Set up Git repository
+      - name: 1 Set up Git repository
         uses: actions/checkout@v2
-      - name: pdflatex main
+      - name: 2 pdflatex main
         uses: dante-ev/latex-action@latest
         with:
           root_file: main.tex
           compiler: pdflatex
           args: -interecation=nonstopmode
+      - name: 3 create glossar/akronym
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: main
+          compiler: makeglossaries
+      - name: 4 pdflatex main
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: main.tex
+          compiler: pdflatex
+          args: -interaction=nonstopmode -shell-escape        
+      - name: 5 bibtex main
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: main.aux
+          compiler: bibtex
+      - name: 6 pdflatex main
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: main.tex
+          compiler: pdflatex
+          args: -interaction=nonstopmode -shell-escape
 
