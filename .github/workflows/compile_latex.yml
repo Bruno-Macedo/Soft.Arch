@@ -22,7 +22,7 @@ jobs:
         with:
           root_file: main.tex
           compiler: pdflatex
-          args: -interaction=nonstopmode -shell-escape        
+          args: -interaction=nonstopmode       
       - name: 5 bibtex main
         uses: dante-ev/latex-action@latest
         with:
@@ -33,5 +33,5 @@ jobs:
         with:
           root_file: main.tex
           compiler: pdflatex
-          args: -interaction=nonstopmode -shell-escape
+          args: -interaction=nonstopmode
 
