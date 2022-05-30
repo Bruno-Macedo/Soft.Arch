@@ -9,5 +9,6 @@ jobs:
           ls ${{ github.workspace }}
           echo "Running latex"
           echo ${GITHUB_WORKSPACE}
+          ls
 
           
