@@ -7,4 +7,7 @@ jobs:
       - name: Compile latex
         run: |
           ls ${{ github.workspace }}
-      - run: latexcompile -b -r -g -s ../../main.tex
+          echo "Running latex"
+          chmod +x "${GITHUB_WORKSPACE}/.github/latexcompile.sh
+          ${GITHUB_WORKSPACE}/.github/latexcompile.sh -b -r -g -s ${GITHUB_WORKSPACE}/main.tex
+          
