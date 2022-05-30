@@ -120,7 +120,7 @@ if [[ ${LOESCHEN} = 'true' ]]
 then
     
    
-    DATEILOESCHEN=$(find *.aux *.bbl *.toc *.log *.blg *.fls *.out *.gls *.glo *.ist 2> /dev/null)
+    DATEILOESCHEN=$(find *.aux *.acn *.blg *.fls *.glo *.ist *.log *.out *.bbl *.toc *.log *.blg *.fls *.out *.gls *.glo *.ist 2> /dev/null)
     #BBLDATEI=$(find *.bbl 2> /dev/null)
     #TOCDATEI=$(find *.toc 2> /dev/null)
     #LOGDATEI=$(find *.log 2> /dev/null)
