@@ -9,6 +9,4 @@ jobs:
       - name: latexcombile.sh
         uses: dante-ev/latex-action@latest
         with:
-          entrypoint: ./latexcompile
-          root_file: main.tex
-          args: -r -b -g
+          entrypoint: ./latexcompile -r -b -g main.tex
