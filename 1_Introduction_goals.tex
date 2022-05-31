@@ -32,7 +32,7 @@ identify its main quality attributes
     \toprule
     Use Case & Description  \\
     \midrule
-    UC-1: Register as \gls{client} & The = \gls{client} register an e-mail address.\\
+    UC-1: Register as \gls{client} & The \gls{client} register an e-mail address.\\
     UC-2: Login & The \gls{client} logins in to the system. \\
     UC-3: Place an order & The \gls{client} chooses a \gls{provider}. \\
     UC-4: Register payment & The \gls{client} register a payment method. \\
@@ -71,8 +71,12 @@ system meets the needs our \glsplural{stakeholder} \cite{refbook:DSHC}.
         QA-4 & \textit{[to be defined]} & A \gls{client}  register his credit card or select another payment method and the
         confirmation as soon as he confirmed with his \gls{provider}. & UC-4 \\
         QA-5 & Usability & A \gls{provider} is able to register his company, specify the kind of products he offers and upload
-        a logo or picture of his shop. & UC-05 \\
+        a logo or picture of his shop. & UC-5 \\
         QA-6 & Usability & A \gls{provider} is able to update in the app if he is offering for that day any product. &  UC-6 \\
+        QA-7 & Interoperability & A \gls{client} can register his e-mail using another account (Google, Microsoft, Facebook)
+        in a federated environment & UC01 \\
+        QA-8 & Interoperability & A \gls{client} can pay the order using a \gls{mobile payment gateway} (i.e. Stripe, Square, PayPay, 
+        SecurePay) & UC-1 \\
         \bottomrule
     \end{tabularx}
 \end{table}
