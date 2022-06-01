@@ -42,8 +42,13 @@
 }
 \newglossaryentry{class diagram} {
     name={Class Diagram},
-    description={This kind of diagram present the structure of a system with its classes, attributes,
+    description={This kind of diagram presents the structure of a system with its classes, attributes,
     methods and relationships\cite{refonline:IBMCD}}
+}
+\newglossaryentry{use case diagram} {
+    name={Use Case Diagram},
+    description={This kind of diagram presents the main requirements and functionality of a systems. It displays
+    a simplified overview of core purpose of the application \cite{refart:YWRUS}}
 }
 \newglossaryentry{mobile payment gateway} {
     name={Mobile Payment Gateway},
@@ -52,6 +57,14 @@
     receives the money and the customer the confirmation. The core functionality of those gateways is the cryptography
     within the communication steps\cite{refonline:VPGI}}
 }
+
+\newglossaryentry{federated login} {
+    name={Federated Login},
+    description={Authentication method in which users use existing accounts to gain access to another domains or systems
+    without the need of creating new credentials. The authenticity of a user is attested by service and granted to another 
+    \cite{refonline:MRFL}}
+}
+
 
 
 
@@ -74,6 +87,7 @@
     \clearpage
     \include{1_Introduction_goals}
     \include{2_4+1_arch_view}
+    \include{2_Architecture_Constraints}
     %\include{3_Context_and_Scope}
     %\include{4_Solution_Strategy}
     %\include{5_Building_Block_View}
