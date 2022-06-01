@@ -1,6 +1,8 @@
 \section{Quality Requirements}
 
-\subsection{Primary Functionality} 
+\subsection{Quality Tree}
+
+\subsection{Evaluation Scenarios} 
 From the requirements, \ref{Requirement_Overview}, we could develop the following uses cases and depict the main quality 
 attributes of this project. 
 
@@ -81,7 +83,6 @@ The defined quality attributes are represented in the following scenarios:
     \end{tabularx}
 \end{table}
 
-
 \begin{table}[H]
     \setstretch{1.0}
     \begin{tabularx}{\textwidth}{|c|X|}
@@ -130,18 +131,28 @@ The defined quality attributes are represented in the following scenarios:
         \multicolumn{1}{c}{Scenario} & \multicolumn{1}{c}{Value} \\
         \midrule
         Source & \gls{client} \\
-        Stimulus & wants register for the app \\
-        Artifact & app \\
-        Environment & peak period, between 4 and 7 pm on Friday\\
-        Response & direct access to the app \\
-        Response Measure & How long did take until the client get the confirmation/declined of payment?\\
-         & \\
-         Source & \gls{client} \\
-         Stimulus & wants pay for a product \\
-         Artifact & app \\
-         Environment & working time, during afternoon \\
-         Response & confirmation of payment / payment declined \\
-         Response Measure & How long did take until the client get the confirmation/declined of payment?\\
+        Stimulus & wants register using a \gls{federated login} \\
+        Artifact & app and \gls{federated login} provider  \\
+        Environment & peak period (on the context of the \gls{federated login} provider)\\
+        Response & authentication succeed or failed\\
+        Response Measure & How much data was transmitted and how much was queued? \\
+        Focus & System overload \cite{refart:MKMS} \\
+        & \\
+        Source & \gls{client} \\
+        Stimulus & wants to pay using existing mobile payment account \\
+        Artifact & app and \gls{mobile payment gateway}  \\
+        Environment & peak period (on the context of the gateway)\\
+        Response & confirmation / declined \\
+        Response Measure & Total amount generated data in the app that are transferred and processed by the gateway \\
+        Focus & Connectivity and System overload \cite{refart:MKMS} \\
+        & \\
+        Source & \gls{client} \\
+        Stimulus & click on purchase \\
+        Artifact & app and \gls{mobile payment gateway}  \\
+        Environment & peak period (on the context of the gateway)\\
+        Response & confirmation / declined \\
+        Response Measure & Time from clicking purchase until time of confirmation/declined \\
+        Focus & Data latency \cite{refart:MKMS} \\
         \bottomrule
     \end{tabularx}
 \end{table}
