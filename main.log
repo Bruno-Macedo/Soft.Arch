@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2022.5.12)  8 JUN 2022 14:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2022.5.12)  8 JUN 2022 14:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1117,14 +1117,14 @@ No file main.gls.
 <assets/preliminary_use_case.png, id=190, 521.95pt x 393.47pt>
 File: assets/preliminary_use_case.png Graphic file (type png)
 <use assets/preliminary_use_case.png>
-Package pdftex.def Info: assets/preliminary_use_case.png  used on input line 92.
+Package pdftex.def Info: assets/preliminary_use_case.png  used on input line 89.
 (pdftex.def)             Requested size: 292.77629pt x 220.70792pt.
  [8pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.119 
-       </home/bruno/git/Soft.Arch/assets/preliminary_use_case.png>]) [9] [10]
+l.116 
+       </home/bruno/git/Soft.Arch/assets/preliminary_use_case.png>] [9]) [10]
 \openout2 = `2_4+1_arch_view.aux'.
 
  (/home/bruno/git/Soft.Arch/2_4+1_arch_view.tex
@@ -1269,7 +1269,7 @@ pdfTeX warning (dest): name{glo:client} has been referenced but does not exist, 
 pdfTeX warning (dest): name{glo:provider} has been referenced but does not exist, replaced by a fixed one
 
  </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600pk> </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1095.600pk> </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk> </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1200.600pk> </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk> </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1095.600pk> </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1440.600pk> </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk>
-Output written on /home/bruno/git/Soft.Arch/main.pdf (22 pages, 350296 bytes).
+Output written on /home/bruno/git/Soft.Arch/main.pdf (22 pages, 350844 bytes).
 PDF statistics:
  876 PDF objects out of 1000 (max. 8388607)
  362 compressed objects within 4 object streams
