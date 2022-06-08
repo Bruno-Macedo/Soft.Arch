@@ -29,15 +29,15 @@ With our project we want to achieve the following goals:
 \subsection{Design Purpose}
 
 The main purpose of this architecture is creating exploratory prototype of an \gls{app}. We aim to test it with potential 
-\gls{stakeholder} and regions to analyze their general acceptance and wishes \cite{refbook:DSHC} and get a fast feedback. 
+\glsplural{stakeholder} and regions to analyze their general acceptance and wishes \cite{refbook:DSHC} and get a fast feedback. 
 
-This prototype will also make it feasible to identify unknown needs an wishes of the potential \gls{stakeholder}, so we 
+This prototype will also make it feasible to identify unknown needs an wishes of the potential \glsplural{stakeholder}, so we 
 can eventually increase the scope of functionality. Exploring this domain will also provide us with information regarding 
-the behavior of our \gls{stakeholder} when it comes to buying and serving food that would be wasted, but is still consumable.
+the behavior of our target group when it comes to buying and serving food that would be wasted, but is still consumable.
 
 \subsection{Requirement Overview} \label{Requirement_Overview}
 
-The following functionalities should provide a brief description of the main requirements of the app:
+The following functionalities describe the basic requirement for the \gls{app}:
 
 \begin{table}[H]
     \setstretch{1.0}
@@ -57,6 +57,32 @@ The following functionalities should provide a brief description of the main req
     \bottomrule
     \end{tabularx}
 \end{table}
+
+\begin{table}[H]
+    \setstretch{1.0}
+    \begin{tabularx}{\textwidth}{lX}
+    \toprule
+    ID & Reasoning   \\
+    \midrule
+    F-1 & The entry door of the \gls{app}, where our \gls{client} get an overview of all available offers \\
+    F-2 & In order to place purchases our client need to be registered. It will also provide 
+    statistical information about consumer behavior \\
+    F-3 & Since we are dealing with a business relationship we have on one side a client willing to pay
+    and for a product and on the other side a provider willing to offer a product/service \\
+    F-4 & Like any other online-shop it is important that our \gls{client} browse through the available possibilities\\
+    F-5 & In order to make a product available a \gls{provider} needs to register his/her shop. This information will
+    also be used for statistical analyzes about providers, products and consumer behavior \\
+    F-6 - F-7 & A registered \gls{provider} can make an offer available according to his/her daily planning. 
+    For future development of this app, this will be helpful to identify tendencies regarding dates, periods 
+    and availabilities. \\
+    F-8 & Also registered \glsplural{provider} can get an overview about how often their products haben been sold. This
+    may open a different kind of business orientation. \\
+    \bottomrule
+    \end{tabularx}
+\end{table}
+
+
+
 
 \newpage
 The following \gls{use case diagram} displays an overview of the primary functionality of the app:
@@ -78,11 +104,15 @@ The key qualities of this app are described in the table below:
         \toprule
         \multicolumn{1}{c}{Quality} & \multicolumn{1}{c}{Priority} & \multicolumn{1}{c}{Motivation} \\
         \midrule
-        \textbf{Usability} & 1 & The app allows users to perform login, purchase and uploads within maximum 3 
-        steps or page changes. Each step or page contains no more than 140 characters of instruction. \\
-        \textbf{Interoperability} & 2 & The app allows registration and payment using credentials of other platforms
-        (i.g \gls{mobile payment gateway} and \gls{federated login}). \\
-        \textbf{Performance} & 3 & The app responds to user's interaction within few seconds. \\
+        \textbf{Usability} & 1 & Since we are working with a prototype it is important the the usage is ease as possible,
+        to attract more \glsplural{user} and to gather information about consumer behaviour. \glsplural{client} and \glsplural{provider}
+        should have a simple interface where they can quickly interact without any burdens. \\
+        \textbf{Interoperability} & 2 & To reduce programming burdens and accelerate the delivery of a working product the
+        the registration and payment process will rely on third party providers. For that reason the developed features should
+        work faultless in combination with the external APIs (i.g \gls{mobile payment gateway} and \gls{federated login}). \\
+        \textbf{Performance} & 3 & Many mobile and web-apps lose potential \glsplural{user} because of the lack of performance. A 
+        \gls{system response} that takes to long (more than 1 second \cite{refonline:AP16M}) may frustrate potential \glsplural{user} 
+        and discourage them of using the application. \\
         \bottomrule
     \end{tabularx}
 \end{table}
@@ -98,11 +128,16 @@ The main \glsplural{stakeholder} of this app are described in the table below:
     Stakehoder & Description   \\
     \midrule
     Providers & Owner of a restaurant, bakery or pastry. \\
-    Clients & Person who wants to buy last minute products from a provider. \\
+    Clients & Person who wants to purchase last minute product from a provider. \\
     Developers & Team in charge of creating the application using existing tactics and creating new solutions. \\
     Boarding Committee of \\ ``Clean Up the Word (R)'' & Members of the management team who wants to delivery 
-    environmental solution do daily problems \\
+    environmental solution do daily problems and at the same time develop a profitable product.  \\
     Environment Activist & Part of the society who aims to find environmental solutions to daily problems. \\
     \bottomrule
     \end{tabularx}
 \end{table}
+
+The first two stakeholders are the main protagonist of the this app. They will interact with each other and provide valuable
+information regarding consumer behaviour. According to the analyze of their data it will be possible to promote a sustainable
+consumer relationships. In this relationship \glsplural{provider} will be able to reduce the amount of consumable food that
+would be wasted, and \glsplural{client} may get a different consuming experience.
