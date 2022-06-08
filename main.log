@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2022.5.12)  8 JUN 2022 17:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2022.5.12)  8 JUN 2022 17:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1173,16 +1173,16 @@ File: assets/business_context.jpg Graphic file (type jpg)
 <use assets/business_context.jpg>
 Package pdftex.def Info: assets/business_context.jpg  used on input line 10.
 (pdftex.def)             Requested size: 220.50887pt x 283.51411pt.
-<assets/technical_context.jpg, id=310, 378.41376pt x 470.75874pt>
+<assets/technical_context.jpg, id=310, 378.41376pt x 471.7625pt>
 File: assets/technical_context.jpg Graphic file (type jpg)
 <use assets/technical_context.jpg>
 Package pdftex.def Info: assets/technical_context.jpg  used on input line 33.
-(pdftex.def)             Requested size: 220.50887pt x 274.31886pt.
+(pdftex.def)             Requested size: 220.50887pt x 274.90376pt.
  [14
 
 
  </home/bruno/git/Soft.Arch/assets/business_context.jpg>]
-Underfull \hbox (badness 10000) in alignment at lines 49--49
+Underfull \hbox (badness 10000) in alignment at lines 50--50
 [][] 
  []
 
@@ -1190,7 +1190,7 @@ Underfull \hbox (badness 10000) in alignment at lines 49--49
 \openout2 = `10_Quality_Requirements.aux'.
 
  (/home/bruno/git/Soft.Arch/10_Quality_Requirements.tex
-<assets/quality_tree.png, id=322, 647.41875pt x 472.76625pt>
+<assets/quality_tree.png, id=334, 647.41875pt x 472.76625pt>
 File: assets/quality_tree.png Graphic file (type png)
 <use assets/quality_tree.png>
 Package pdftex.def Info: assets/quality_tree.png  used on input line 7.
@@ -1274,10 +1274,10 @@ pdfTeX warning (dest): name{glo:un} has been referenced but does not exist, repl
 pdfTeX warning (dest): name{glo:fao} has been referenced but does not exist, replaced by a fixed one
 
  </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600pk> </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1095.600pk> </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk> </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1200.600pk> </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk> </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1095.600pk> </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1440.600pk> </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/bruno/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk>
-Output written on /home/bruno/git/Soft.Arch/main.pdf (22 pages, 407621 bytes).
+Output written on /home/bruno/git/Soft.Arch/main.pdf (22 pages, 408604 bytes).
 PDF statistics:
- 914 PDF objects out of 1000 (max. 8388607)
- 381 compressed objects within 4 object streams
+ 926 PDF objects out of 1000 (max. 8388607)
+ 385 compressed objects within 4 object streams
  75 named destinations out of 1000 (max. 500000)
  159 words of extra memory for PDF output out of 10000 (max. 10000000)
 
