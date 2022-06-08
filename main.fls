@@ -244,6 +244,9 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecsx1440.tfm
 INPUT /home/bruno/git/Soft.Arch/main.toc
 INPUT /home/bruno/git/Soft.Arch/main.toc
 OUTPUT /home/bruno/git/Soft.Arch/main.toc
+INPUT /home/bruno/git/Soft.Arch/main.acr
+INPUT /home/bruno/git/Soft.Arch/main.acr
+INPUT /home/bruno/git/Soft.Arch/main.acr
 OUTPUT /home/bruno/git/Soft.Arch/1_Introduction_goals.aux
 INPUT /home/bruno/git/Soft.Arch/1_Introduction_goals.tex
 INPUT /home/bruno/git/Soft.Arch/1_Introduction_goals.tex
