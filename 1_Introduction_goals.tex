@@ -53,7 +53,7 @@ The following functionalities describe the basic requirement for the \gls{app}:
     F-6 & Create offer & A registered \gls{provider} can publishes what products they are offering with price 
     and amount. \\
     F-7 & Upload offer & A registered \gls{provider} can add, edit or remove offers to his catalog.\\
-    F-8 & Check orders & A registered \gls{provider} can check all existing orders.\\
+    F-8 & Check orders & A registered \gls{provider} can check all existing orders targeting his/her shops.\\
     \bottomrule
     \end{tabularx}
 \end{table}
@@ -86,7 +86,7 @@ The following \gls{use case diagram} displays an overview of the primary functio
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{assets/preliminary_use_case.png}
+    \includegraphics[width=0.5\textwidth]{assets/preliminary_functions.jpg}
     \caption{Preliminary functions}
     \label{fig:preliminary_use_case}
 \end{figure}
@@ -105,7 +105,7 @@ The key qualities of this app are described in the table below:
         to attract more \glsplural{user} and to gather information about consumer behaviour. \glsplural{client} and \glsplural{provider}
         should have a simple interface where they can quickly interact without any burdens. \\
         \textbf{Interoperability} & 2 & To reduce programming burdens and accelerate the delivery of a working product the
-        the registration and payment process will rely on third party providers. For that reason the developed features should
+        registration and payment process will rely on third party providers. For that reason the developed features should
         work faultless in combination with the external \acrfull{api}s (i.g \gls{mobile payment gateway} and \gls{federated login}). \\
         \textbf{Performance} & 3 & Many mobile and web-apps lose potential \glsplural{user} because of the lack of performance. A 
         \gls{system response} that takes to long (more than 1 second \cite{refonline:AP16M}) may frustrate potential \glsplural{user} 
@@ -136,10 +136,10 @@ The main \glsplural{stakeholder} of this app are described in the table below:
     \end{tabularx}
 \end{table}
 
-The first two stakeholders are the main protagonist of the this app. They will interact with each other and provide valuable
-information regarding consumer behaviour. According to the analyze of their data it will be possible to promote a sustainable
-consumer relationships. In this relationship \glsplural{provider} will be able to reduce the amount of consumable food that
-would be wasted, and \glsplural{client} may get a different consuming experience.
+The first two stakeholders are the main protagonist of the this app. They will interact with each other through the \gls{app}
+and provide valuable information regarding consumer behaviour. According to the analyze of their data it will be possible 
+to promote a sustainable consumer relationships. In this relationship \glsplural{provider} will be able to reduce the amount 
+of consumable food that would be wasted, and \glsplural{client} may get a different consuming experience.
 
 The third stakeholder will guarantee that the main requirements of the app are fulfilled and fully functional. Since they will
 be dealing with the background of the product, it is important that they understand it very good so it can also be implemented
