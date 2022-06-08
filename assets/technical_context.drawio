@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-06-08T13:49:20.432Z" agent="5.0 (Windows)" etag="1k-7KLtOi7NWkscxpIXG" version="19.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-08T15:08:55.451Z" agent="5.0 (Windows)" etag="KjHVeAUoGP_I7uA3jrpS" version="19.0.2" type="github">
   <diagram id="sEQqUNNo2czjuSJTAVwh" name="Page-1">
-    <mxGraphModel dx="763" dy="751" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="419" dy="625" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -65,7 +65,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="5KqHmV9YIozL0LBUB5xf-15" value="Display Order" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="5KqHmV9YIozL0LBUB5xf-14" vertex="1" connectable="0">
+        <mxCell id="5KqHmV9YIozL0LBUB5xf-15" value="Display Products" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="5KqHmV9YIozL0LBUB5xf-14" vertex="1" connectable="0">
           <mxGeometry x="0.2377" y="-1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -91,6 +91,9 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5KqHmV9YIozL0LBUB5xf-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.911;entryY=0.023;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="5KqHmV9YIozL0LBUB5xf-8" target="5KqHmV9YIozL0LBUB5xf-27" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nmTlqVQciV6P7d-cFu-y-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.993;entryY=0.54;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="5KqHmV9YIozL0LBUB5xf-8" target="5KqHmV9YIozL0LBUB5xf-7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5KqHmV9YIozL0LBUB5xf-8" value="Graphical Interface" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
