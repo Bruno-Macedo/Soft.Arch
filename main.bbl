@@ -1,0 +1,122 @@
+\begin{thebibliography}{}
+
+\bibitem[AAH, 2022]{refart:AAHWH}
+AAH (2022).
+\newblock World hunger: Key facts and statistics 2022.
+\newblock {\em actionagainsthunger.org}.
+\newblock
+  \url{https://www.actionagainsthunger.org/world-hunger-facts-statistics},
+  Accessed 18th May 2022.
+
+\bibitem[AppDynamics, 2020]{refonline:AP16M}
+AppDynamics (2020).
+\newblock 16 metrics to ensure mobile app success.
+\newblock
+  \url{https://www.hwe.design/theories-concepts/system-response-stability}.
+  Accessed 8st June 2022.
+
+\bibitem[Baresi, 2009]{refinbook:Baresi2009}
+Baresi, L. (2009).
+\newblock {\em {Activity Diagrams}}, pages 41--45.
+\newblock Springer US, Boston, MA.
+\newblock \url{https://doi.org/10.1007/978-0-387-39940-9_9}, Accessed 26th May
+  2022.
+
+\bibitem[Cervantes and Kazman, 2016]{refbook:DSHC}
+Cervantes, H. and Kazman, R. (2016).
+\newblock {\em Designing Software Architectures: A Practical Approach}.
+\newblock Pearson Education, Boston.
+
+\bibitem[FAO, 2013]{refart:FAOFW}
+FAO (2013).
+\newblock Food wastage: Key facts and figures.
+\newblock {\em fao.org}.
+\newblock \url{https://www.fao.org/news/story/en/item/196402/icode/}, Accessed
+  18th May 2022.
+
+\bibitem[FAO, 2022]{refart:FAO17}
+FAO (2022).
+\newblock 17% of total food available to consumers in 2019 was wasted.
+\newblock {\em fao.org}.
+\newblock
+  \url{https://www.fao.org/food-loss-reduction/news/detail/en/c/1378973/},
+  Accessed 18th May 2022.
+
+\bibitem[Franzen and Thoms, 2020]{refonline:EFAD}
+Franzen, E. and Thoms, M.~S. (2020).
+\newblock Architectural drivers in modern software architecture.
+\newblock
+  \url{https://medium.com/@janerikfra/architectural-drivers-in-modern-software-architecture-cb7a42527bf2},
+  Accessed 18th May 2022.
+
+\bibitem[{HWE.DESIGN}, 2020]{refonline:HWHE}
+{HWE.DESIGN} (2020).
+\newblock Hardware engineering design.
+\newblock
+  \url{https://www.hwe.design/theories-concepts/system-response-stability}.
+  Accessed 8st June 2022.
+
+\bibitem[IBM, 2004]{refonline:IBMCD}
+IBM (2004).
+\newblock {What is Class Diagram?}
+\newblock \url{https://developer.ibm.com/articles/the-class-diagram/}, Accessed
+  18th May 2022.
+
+\bibitem[Kasunic and Anderson, 2004]{refart:MKMS}
+Kasunic, M. and Anderson, W. (2004).
+\newblock Measuring systems interoperability: Challenges and opportunities.
+\newblock Technical Report CMU/SEI-2004-TN-003, Software Engineering Institute,
+  Carnegie Mellon University, Pittsburgh, PA.
+\newblock
+  \url{http://resources.sei.cmu.edu/library/asset-view.cfm?AssetID=6871}.
+  Accessed 1st June 2022.
+
+\bibitem[Kruchten, 1995]{refart:KR41}
+Kruchten, P. (1995).
+\newblock {The 4+1 View Model of architecture}.
+\newblock {\em IEEE Software}, 12(6):42--50.
+\newblock \url{https://doi.org/10.1109/52.469759}, Accessed 18th May 2022.
+
+\bibitem[MuleSoft, 2015]{refonline:MSAPI}
+MuleSoft (2015).
+\newblock What is an api? (application programming interface).
+\newblock \url{https://www.mulesoft.com/resources/api/what-is-an-api}. Accessed
+  8st June 2022.
+
+\bibitem[Robinson, 2019]{refonline:MRFL}
+Robinson, M. (2019).
+\newblock What does federated login mean? a simple, detailed answer.
+\newblock
+  \url{https://carvesystems.com/news/what-does-federated-login-mean-a-simple-detailed-answer/}.
+  Accessed 1st June 2022.
+
+\bibitem[{SPD LOAD}, 2019]{refonline:SPDLOAD}
+{SPD LOAD} (2019).
+\newblock How much does it cost to develop an app in 2022? cost breakdown.
+\newblock
+  \url{https://carvesystems.com/news/what-does-federated-login-mean-a-simple-detailed-answer/}.
+  Accessed 1st June 2022.
+
+\bibitem[UN, 2022]{refart:UNSP}
+UN (2022).
+\newblock Stop food loss and waste, for the people, for the panet.
+\newblock {\em un.org}.
+\newblock \url{https://www.un.org/en/observances/end-food-waste-day}, Accessed
+  18th May 2022.
+
+\bibitem[Vilmate, 2019]{refonline:VPGI}
+Vilmate (2019).
+\newblock Payment gateway integration in a mobile application.
+\newblock
+  \url{https://vilmate.com/blog/payment-gateway-integration-in-a-mobile-application/},
+  Accessed 31st may 2022.
+
+\bibitem[Waykar, 2015]{refart:YWRUS}
+Waykar, Y. (2015).
+\newblock role of use case diagram in software development.
+\newblock {\em International Journal of Management and Economics}.
+\newblock
+  \url{https://www.researchgate.net/publication/322991847_role_of_use_case_diagram_in_software_development}.
+  Accessed 1st June 2022.
+
+\end{thebibliography}

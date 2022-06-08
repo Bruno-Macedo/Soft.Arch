@@ -27,23 +27,44 @@ The following \gls{activity diagram} depicts the register and login procedure wi
 To describe this view we choose a \gls{class diagram}. With it we may provide a static description of elements
 of our app. This will be very relevant for the developing process of the \gls{app}.
 
-The first part of the describes the Element within the \gls{provider}. It contains one or more addresses and it 
+The first part of the this diagram describes the element within the \gls{provider}. It contains one or more addresses and it 
 can offer one or more products. A provider will also fall into the category restaurant, bakery or pastry.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{assets/classes_CD.jpg}
-    \caption{Classes of the project}
-    \label{fig:class_CD}
+    \includegraphics[width=0.7\textwidth]{assets/Provider_Addr_Item.jpg}
+    \caption{Provider overview}
+    \label{fig:Provider_addr_item}
 \end{figure}
  
+The class dedicated to the \glsplural{client} should be as simple as possible. It should provide basic interaction like
+registering, logging, deleting account, viewing product and placing order. The two last actions will stablish the communication 
+with the \glsplural{provider}.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{assets/client_CD.jpg}
+    \caption{Client Overview}
+    \label{fig:client_CD}
+\end{figure}
 
+Finally we have an order placed by a \gls{client} and processed by a \gls{provider}. Here we will rely on a third party 
+to stablish the payment procedures.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{assets/order_cd.jpg}
+    \caption{Order Overview}
+    \label{fig:order_cd}
+\end{figure}
+
+This final graphic show the whole classes in combination:
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{assets/classes_CD.jpg}
-    \caption{Classes of the project}
+    \caption{Classes Overview}
     \label{fig:class_CD}
 \end{figure}
+
  
