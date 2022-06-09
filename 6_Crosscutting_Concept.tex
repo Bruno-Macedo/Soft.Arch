@@ -84,7 +84,7 @@ experience, the payment process should also be harmonic with other features.
         \toprule
         \multicolumn{1}{c}{Tactict} & \multicolumn{1}{c}{Pattern} & \multicolumn{1}{c}{Motivation} & \multicolumn{1}{c}{QA} \\
         \midrule
-        \textbf{Limit Dependencies} & \gls{wrapper} & The \gls{api} will be the intermediary for the payment process. For the 
+        \textbf{Limit Dependencies} & \Gls{wrapper} & The \gls{api} will be the intermediary for the payment process. For the 
         \glsplural{client} all visible steps will occur in the app, without being sent to another page. On the background
         the \gls{api} will receive the input and send it to the payment gateway. The verification takes place in gateway, 
         which then communicate with the financial institute of the client and send the payment to the \gls{provider} 
@@ -126,7 +126,7 @@ for \glsplural{client} to browse.
         \multicolumn{1}{c}{Tactict} & \multicolumn{1}{c}{Pattern} & \multicolumn{1}{c}{Motivation} & \multicolumn{1}{c}{QA} \\
         \midrule
         \textbf{Increase Resources} & \gls{Load Balancer} & Specially during peak times we want our users to have a 
-        smoothly and fast interaction with the app. \glsplural{provider} and \glsplural{client} should perform their
+        smoothly and fast interaction with the app. \Glsplural{provider} and \glsplural{client} should perform their
         tasks, either browsing, purchasing or uploading offering without having to wait to get a response. With this
         decision all requests would be forwarded to the server that are available avoiding queuing of requests. & QA-3 \\
         \bottomrule
