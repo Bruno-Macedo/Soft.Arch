@@ -2,7 +2,6 @@
 \newacronym{un}{UN}{United Nations}
 \newacronym{api}{API}{Application Programming Interface}
 
-
 \newglossaryentry{user} {
     name={User},
     plural={users},
@@ -120,3 +119,22 @@
     description={Mechanism used to check if user's input (data or file) corresponds to the criteria defined in
     the app. Non-conform input are discarded before even reaching the app \cite{refonline:kpbot}}
 }
+
+
+
+% here goes to the description
+\newglossaryentry{DoSS}{
+    name=\glslink{DoS}{Denial of Service (\gls{DoS})},
+    description={Intentional interruption or laming of network services}
+}
+
+% here goes to the acronym
+\newglossaryentry{DoS}{
+    type=\acronymtype,
+    name=DoS,
+    first={Denial of Service (DoS)\glsadd{DoSS}},
+    see=[Glossary:]{\gls{DoSS}}, 
+    description=\glslink{DoSS}{Denial of Service}
+}
+
+

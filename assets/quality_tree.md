@@ -15,9 +15,9 @@
 			* QA-6
 		* Data Latency
 			* QA-7
-  	* 4. Security
-		* Secure Comunication
+	* 4. Security
+		* Secure Communication
+			* QA-4
 			* QA-5
-			* QA-6
-			* QA-8	
+			* QA-8
 @endmindmap

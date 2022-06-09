@@ -61,134 +61,203 @@ the needs our \glsplural{stakeholder} \cite{refbook:DSHC}.
 \newpage
 The defined quality attributes are represented in the following scenarios:
 
-
 \begin{table}[H]
-    \begin{tabularx}{\textwidth}{|c|X|}
+    \setstretch{1.0}
+    \begin{tabularx}{\textwidth}{|c|X|X|X|}
         \hline
-        \multicolumn{2}{c}{\textbf{Usability}} \\
+        \multicolumn{4}{c}{\textbf{Usability}} \\
         \hline
         \toprule
-        \multicolumn{1}{c}{Scenario} & \multicolumn{1}{c}{Value} \\
+        \multicolumn{1}{|c|}{\textbf{Scenario}} & \multicolumn{3}{|c|}{\textbf{Value}} \\
         \midrule
-        Source & \gls{provider} \\
-        Stimulus & wants to register his shops \\
-        Artifact & app \\
-        Environment & working time, during afternoon \\
-        Response & offer available in the app \\
-        Response Measure & How long did the registration and upload process take? How many and what kind of error messages
-        did the \gls{provider} get?\\
-         & \\
-        Source & Registered \gls{provider} \\
-        Stimulus & wants wants to make a last minute offer \\
-        Artifact & app \\
-        Environment & peak period, between 4 and 7 pm on Friday \\
-        Response & immediate availability of the offer in the app \\
-        Response Measure & How long did it take to upload an offer? How many and what kind of error messages did the 
-        \gls{provider} get? \\
-        & \\
-        Source & Registered \gls{client} \\
-        Stimulus & wants to search/filter offers \\
-        Artifact & app \\
-        Environment & peak period, between 4 and 7 pm on Friday \\
-        Response & display of the filter/search output \\
-        Response Measure & What kind of inputs did the user has to place until he finds what he wants?
-        Did he have to type anything or were filter/search options available? How long it takes until the client
-        finds a product? \\
+        Source & \gls{provider} & Registered \gls{provider} & \gls{client}  \\
+        \hline
+        Stimulus & wants to register his shops & wants wants to make a last minute offer & wants to search/filter offers \\
+        \hline
+        Artifact & app & app & app \\
+        \hline
+        Environment & working time, during afternoon & peak period, between 4 and 7 pm on Friday & peak period, between 4 and 7 pm on Friday \\
+        \hline
+        Response & offer available in the app & immediate availability of the offer in the app & display of the filter/search output \\
+        \hline
+        Response Measure & How long did the registration and upload process take? How many and what kind of error messages did the \gls{provider} get?
+        & How long did it take to upload an offer? How many and what kind of error messages did the \gls{provider} get? 
+        & What kind of inputs did the user has to place until he finds what he wants? Did he have to type anything or were filter/search
+        options available? How long it takes until the client finds a product? \\
         \bottomrule
     \end{tabularx}
 \end{table}
 
 
-\begin{table}[H]
-    \begin{tabularx}{\textwidth}{|c|X|}
+% \begin{table}[H]
+%     \begin{tabularx}{\textwidth}{|c|X|}
+%         \hline
+%         \multicolumn{2}{c}{\textbf{Usability - BACKUP}} \\
+%         \hline
+%         \toprule
+%         \multicolumn{1}{c}{Scenario} & \multicolumn{1}{c}{Value} \\
+%         \midrule
+%         Source & \gls{provider} \\
+%         Stimulus & wants to register his shops \\
+%         Artifact & app \\
+%         Environment & working time, during afternoon \\
+%         Response & offer available in the app \\
+%         Response Measure & How long did the registration and upload process take? How many and what kind of error messages
+%         did the \gls{provider} get?\\
+%          & \\
+%         Source & Registered \gls{provider} \\
+%         Stimulus & wants wants to make a last minute offer \\
+%         Artifact & app \\
+%         Environment & peak period, between 4 and 7 pm on Friday \\
+%         Response & immediate availability of the offer in the app \\
+%         Response Measure & How long did it take to upload an offer? How many and what kind of error messages did the 
+%         \gls{provider} get? \\
+%         & \\
+%         Source & Registered \gls{client} \\
+%         Stimulus & wants to search/filter offers \\
+%         Artifact & app \\
+%         Environment & peak period, between 4 and 7 pm on Friday \\
+%         Response & display of the filter/search output \\
+%         Response Measure & What kind of inputs did the user has to place until he finds what he wants?
+%         Did he have to type anything or were filter/search options available? How long it takes until the client
+%         finds a product? \\
+%         \bottomrule
+%     \end{tabularx}
+% \end{table}
+
+ \begin{table}[H]
+    \setstretch{1.0}
+    \begin{tabularx}{\textwidth}{|c|X|X|}
         \hline
-        \multicolumn{2}{c}{\textbf{Interoperability}} \\
+        \multicolumn{3}{c}{\textbf{Interoperability}} \\
         \hline
         \toprule
-        \multicolumn{1}{c}{Scenario} & \multicolumn{1}{c}{Value} \\
+        \multicolumn{1}{|c|}{\textbf{Scenario}} & \multicolumn{2}{|c|}{\textbf{Value}} \\
         \midrule
-        Source & \gls{client} \\
-        Stimulus & wants register using a \gls{federated login} \\
-        Artifact & app and \gls{federated login} provider  \\
-        Environment & peak period (on the context of the \gls{federated login} provider)\\
-        Response & authentication succeed or failed\\
-        Response Measure & How much data was transmitted and how much was queued? \\
-        Focus & System overload \cite{refart:MKMS} \\
-        & \\
-        Source & \gls{client} \\
-        Stimulus & wants to pay using existing mobile payment account \\
-        Artifact & app and \gls{mobile payment gateway}  \\
-        Environment & peak period (on the context of the gateway)\\
-        Response & confirmation / declined \\
-        Response Measure & Total amount generated data in the app that are transferred and processed and rejected
-        by the gateway \\
-        Focus & Connectivity and System overload \cite{refart:MKMS} \\
+        Source & \gls{client} & \gls{client}  \\
+        \hline
+        Stimulus & wants register using a \gls{federated login} & wants to pay using existing mobile payment account \\
+        \hline
+        Artifact & app and \gls{federated login} provider & app and \gls{mobile payment gateway} \\
+        \hline
+        Environment & peak period (on the context of the \gls{federated login} provider) & peak period (on the context of the gateway) \\
+        \hline
+        Response & authentication succeed or failed & confirmation / declined \\
+        \hline
+        Response Measure & How much data was transmitted and how much was queued? Focus on System overload \cite{refart:MKMS}
+        & Total amount generated data in the app that are transferred and processed and rejected by the gateway? Focus o connectivity 
+        and system overload \cite{refart:MKMS} \\
         \bottomrule
     \end{tabularx}
 \end{table}
 
+% \begin{table}[H]
+%     \begin{tabularx}{\textwidth}{|c|X|}
+%         \hline
+%         \multicolumn{2}{c}{\textbf{Interoperability - Backup}} \\
+%         \hline
+%         \toprule
+%         \multicolumn{1}{c}{Scenario} & \multicolumn{1}{c}{Value} \\
+%         \midrule
+%         Source & \gls{client} \\
+%         Stimulus & wants register using a \gls{federated login} \\
+%         Artifact & app and \gls{federated login} provider  \\
+%         Environment & peak period (on the context of the \gls{federated login} provider)\\
+%         Response & authentication succeed or failed\\
+%         Response Measure & How much data was transmitted and how much was queued? \\
+%         Focus & System overload \cite{refart:MKMS} \\
+%         & \\
+%         Source & \gls{client} \\
+%         Stimulus & wants to pay using existing mobile payment account \\
+%         Artifact & app and \gls{mobile payment gateway}  \\
+%         Environment & peak period (on the context of the gateway)\\
+%         Response & confirmation / declined \\
+%         Response Measure & Total amount generated data in the app that are transferred and processed and rejected
+%         by the gateway \\
+%         Focus & Connectivity and System overload \cite{refart:MKMS} \\
+%         \bottomrule
+%     \end{tabularx}
+% \end{table}
+
 \begin{table}[H]
-    \begin{tabularx}{\textwidth}{|c|X|}
+    \setstretch{1.0}
+    \begin{tabularx}{\textwidth}{|c|X|X|X|}
         \hline
-        \multicolumn{2}{c}{\textbf{Performance}} \\
+        \multicolumn{4}{c}{\textbf{Performance}} \\
         \hline
         \toprule
-        \multicolumn{1}{c}{Scenario} & \multicolumn{1}{c}{Value} \\
+        \multicolumn{1}{|c|}{\textbf{Scenario}} & \multicolumn{3}{|c|}{\textbf{Value}} \\
         \midrule
-        Source & \gls{client}  \\
-        Stimulus & wishes to create an account \\
-        Artifact & app \\
-        Environment & weekend between 3 and 7 PM \\
-        Response & immediate access to the app \\
-        Response Measure & time between confirmation and access \\
-         & \\
-        Source & \gls{client}  \\
-        Stimulus & wants to search for a \gls{provider} \\
-        Artifact & app \\
-        Environment & peak period, between 6 and 7 pm on a Friday \\
-        Response & immediate access to the offers \\
-        Response Measure & how quickly does the client's device get update of availabilities \\
-        & \\
-        Source & \gls{client}  \\
-        Stimulus & places an order \\
-        Artifact & platform \\
-        Environment & peak period, between 6 and 7 pm on a Friday \\
-        Response & confirmation of payment / payment declined \\
-        Response Measure & How long did take until the client get the confirmation/declined of payment?\\
+        Source & \gls{client} & \gls{client} & \gls{client}  \\
+        \hline
+        Stimulus & wishes to create an account & wants to search for a \gls{provider} & places an order \\
+        \hline
+        Artifact & app & app & app \\
+        \hline
+        Environment & weekend between 3 and 7 PM & peak period, between 6 and 7 pm on a Friday & peak period, between 6 and 7 pm on a Friday \\
+        \hline
+        Response & immediate access to the app  & immediate access to the offers  & confirmation of payment / payment declined \\
+        \hline
+        Response Measure & time between confirmation and access & how quickly does the client's device get update of availabilities 
+        & How long did take until the client get the confirmation/declined of payment? \\
         \bottomrule
     \end{tabularx}
 \end{table}
 
 
+% \begin{table}[H]
+%     \begin{tabularx}{\textwidth}{|c|X|}
+%         \hline
+%         \multicolumn{2}{c}{\textbf{Performance - Backup}} \\
+%         \hline
+%         \toprule
+%         \multicolumn{1}{c}{Scenario} & \multicolumn{1}{c}{Value} \\
+%         \midrule
+%         Source & \gls{client}  \\
+%         Stimulus & wishes to create an account \\
+%         Artifact & app \\
+%         Environment & weekend between 3 and 7 PM \\
+%         Response & immediate access to the app \\
+%         Response Measure & time between confirmation and access \\
+%          & \\
+%         Source & \gls{client}  \\
+%         Stimulus & wants to search for a \gls{provider} \\
+%         Artifact & app \\
+%         Environment & peak period, between 6 and 7 pm on a Friday \\
+%         Response & immediate access to the offers \\
+%         Response Measure & how quickly does the client's device get update of availabilities \\
+%         & \\
+%         Source & \gls{client}  \\
+%         Stimulus & places an order \\
+%         Artifact & platform \\
+%         Environment & peak period, between 6 and 7 pm on a Friday \\
+%         Response & confirmation of payment / payment declined \\
+%         Response Measure & How long did take until the client get the confirmation/declined of payment?\\
+%         \bottomrule
+%     \end{tabularx}
+% \end{table}
 
 \begin{table}[H]
-    \begin{tabularx}{\textwidth}{|c|X|}
+    \setstretch{1.0}
+    \begin{tabularx}{\textwidth}{|c|X|X|}
         \hline
-        \multicolumn{2}{c}{\textbf{Security}} \\
+        \multicolumn{3}{c}{\textbf{Security}} \\
         \hline
         \toprule
-        \multicolumn{1}{c}{Scenario} & \multicolumn{1}{c}{Value} \\
+        \multicolumn{1}{|c|}{\textbf{Scenario}} & \multicolumn{2}{|c|}{\textbf{Value}} \\
         \midrule
-        Source & \gls{client}  \\
-        Stimulus & input payment data \\
-        Artifact & app \\
-        Environment & weekend between 3 and 7 PM \\
-        Response & immediate forwarding of the data to the \gls{api} \\
-        Response Measure &  ??????????? \\
-         & \\
-        Source & \gls{client}  \\
-        Stimulus & wants to search for a \gls{provider} \\
-        Artifact & app \\
-        Environment & peak period, between 6 and 7 pm on a Friday \\
-        Response & immediate access to the offers \\
-        Response Measure & how quickly does the client's device get update of availabilities \\
-        & \\
-        Source & \gls{client}  \\
-        Stimulus & places an order \\
-        Artifact & platform \\
-        Environment & peak period, between 6 and 7 pm on a Friday \\
-        Response & confirmation of payment / payment declined \\
-        Response Measure & How long did take until the client get the confirmation/declined of payment?\\
+        Source & \gls{client} & \gls{client} \\
+        \hline
+        Stimulus & clicks on registration using an existing login & click on pay using an existing mobile payment account \\
+        \hline
+        Artifact & app, \gls{API Gateway} and \gls{federated login} provider & app, \gls{microservice} and \gls{mobile payment gateway} \\
+        \hline
+        Environment & peak period (on the context of the \gls{federated login} provider) & peak period (on the context of the gateway) \\
+        \hline
+        Response & authentication succeed or failed & confirmation / declined \\
+        \hline
+        Response Measure & Required time and effort to intercept and/or block requests (create \glsfirst{DoS})
+        & Extension to image damage of the app and of the company in case of attack \\
         \bottomrule
     \end{tabularx}
 \end{table}
