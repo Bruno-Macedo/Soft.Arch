@@ -8,33 +8,47 @@ For each quality attribute we will present the chosen tactics.
 The core of our app is how easy it is to use. We want our user to navigate through it without being overwhelmed with information
 not related to the main objective: purchase a product or upload a product.
 
+% \begin{table}[H]
+%     \setstretch{1.0}
+%     \begin{tabularx}{\textwidth}{|c|c|X|c|}
+%         \toprule
+%         \multicolumn{1}{c}{Tactict} & \multicolumn{1}{c}{Pattern} & \multicolumn{1}{c}{Motivation} & \multicolumn{1}{c}{QA} \\
+%         \midrule
+%         \textbf{Support User Initiative } & Observer & The interaction of the users is a main factor of our app.
+%         We want them to have fully control of their actions either by cancelling or by resuming an action. & QA-1 \\
+%         \textbf{Support User Initiative } & Lazy Registration & Avoid having to memorize another password and username
+%         may increase the acceptance of the user. With this pattern we allow them also to browse in the app and seeing
+%         what is available without being registered \cite{refonline:IDUI}. This may give a glimpse of what they get
+%         if they join us. & QA-1 \\
+%         \textbf{Support System Initiative} & Observer & By each upload from the \glsplural{provider} we want our
+%         \glsplural{client} to have it on his device, without having to "ask" for it. & QA-1  \\
+%         \bottomrule
+%     \end{tabularx}
+% \end{table}
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+% \usepackage{multirow}
+% \usepackage{graphicx}
 \begin{table}[H]
     \setstretch{1.0}
-    \begin{tabularx}{\textwidth}{|c|c|X|}
-        \toprule
-        \multicolumn{1}{c}{Tactict} & \multicolumn{1}{c}{Pattern} & \multicolumn{1}{c}{Motivation} \\
-        \midrule
-        \textbf{Support User Initiative } & Observer & The interaction of the users is a main factor of our app.
-        We want them to have fully control of their actions either by cancelling or by resuming an action. \\
-        \textbf{Support User Initiative } & Lazy Registration & Avoid having to memorize another password and username
-        may increase the acceptance of the user. With this pattern we allow them also to browse in the app and seeing
-        what is available without being registered\cite{refonline:IDUI}. This may give a glimpse of what they get
-        if they join us. \\
-        \bottomrule
+    \begin{tabularx}{\textwidth}{|c|c|X|c|}
+    \toprule
+    \multicolumn{1}{c}{Tactict} & \multicolumn{1}{c}{Pattern} & \multicolumn{1}{c}{Motivation} & \multicolumn{1}{c}{QA} \\
+    \midrule
+    \multicolumn{1}{|c|}{\multirow{2}{*}{Support User Initiative}} & Observer & The interaction of the users is a main factor
+    of our app. We want them to have fully control of their actions either by cancelling or by resuming an action.
+    & \multirow{3}{*}{QA-1} \\
+    \multicolumn{1}{|c|}{} & Lazy Registration & Avoid having to memorize another password and username may increase 
+    the acceptance of the user. With this pattern we allow them also to browse in the app and seeing what is available 
+    without being registered \cite{refonline:IDUI}. This may give a glimpse of what they get if they join us. &   \\
+    Support System Initiative & Observer & By each upload from the \glsplural{provider} we want our \glsplural{client} 
+    to have it on his device, without having to "ask" for it.  &  \\ 
+    \bottomrule
     \end{tabularx}
 \end{table}
 
-\begin{table}[H]
-    \setstretch{1.0}
-    \begin{tabularx}{\textwidth}{|c|c|X|}
-        \toprule
-        \multicolumn{1}{c}{Tactict} & \multicolumn{1}{c}{Pattern} & \multicolumn{1}{c}{Motivation} \\
-        \midrule
-        \textbf{Support System Initiative} & Observer & By each upload from the \glsplural{provider} we want our
-        \glsplural{client} to have it on his device, without having to "ask" for it.  \\
-        \bottomrule
-    \end{tabularx}
-\end{table}
 
 \subsection{Solution for Interoperability}
 
@@ -66,15 +80,15 @@ experience, the payment process should also be harmonic with other features.
 
 \begin{table}[H]
     \setstretch{1.0}
-    \begin{tabularx}{\textwidth}{|c|c|X|}
+    \begin{tabularx}{\textwidth}{|c|c|X|c|}
         \toprule
-        \multicolumn{1}{c}{Tactict} & \multicolumn{1}{c}{Pattern} & \multicolumn{1}{c}{Motivation} \\
+        \multicolumn{1}{c}{Tactict} & \multicolumn{1}{c}{Pattern} & \multicolumn{1}{c}{Motivation} & \multicolumn{1}{c}{QA} \\
         \midrule
         \textbf{Limit Dependencies} & \gls{wrapper} & The \gls{api} will be the intermediary for the payment process. For the 
         \glsplural{client} all visible steps will occur in the app, without being sent to another page. On the background
         the \gls{api} will receive the input and send it to the payment gateway. The verification takes place in gateway, 
         which then communicate with the financial institute of the client and send the payment to the \gls{provider} 
-        \cite{refonline:ZOPG}.  \\
+        \cite{refonline:ZOPG}. & QA-2 \\
         \bottomrule
     \end{tabularx}
 \end{table}
@@ -87,14 +101,14 @@ party operator, as seen in the picture \ref{fig:sequence_login_payment}.
 
 \begin{table}[H]
     \setstretch{1.0}
-    \begin{tabularx}{\textwidth}{|c|c|X|}
+    \begin{tabularx}{\textwidth}{|c|c|X|c|}
         \toprule
         \multicolumn{1}{c}{Tactict} & \multicolumn{1}{c}{Pattern} & \multicolumn{1}{c}{Motivation} \\
         \midrule
         \textbf{\gls{microservice}} & \gls{API Gateway} & It increases security, so the microservice is not directly
         exposed to the external world. It reduces the complexity of the microservice, since the gateway will have to deal
         with data transfer rate, tokens and other activities. Dealing with failures would also be handled and logged
-        by the microservice \cite{refonline:javtop}.\\
+        by the microservice \cite{refonline:javtop}. & QA-2\\
         \bottomrule
     \end{tabularx}
 \end{table}
@@ -107,14 +121,14 @@ for \glsplural{client} to browse.
 
 \begin{table}[H]
     \setstretch{1.0}
-    \begin{tabularx}{\textwidth}{|c|c|X|}
+    \begin{tabularx}{\textwidth}{|c|c|X|c|}
         \toprule
-        \multicolumn{1}{c}{Tactict} & \multicolumn{1}{c}{Pattern} & \multicolumn{1}{c}{Motivation} \\
+        \multicolumn{1}{c}{Tactict} & \multicolumn{1}{c}{Pattern} & \multicolumn{1}{c}{Motivation} & \multicolumn{1}{c}{QA} \\
         \midrule
         \textbf{Increase Resources} & \gls{Load Balancer} & Specially during peak times we want our users to have a 
         smoothly and fast interaction with the app. \glsplural{provider} and \glsplural{client} should perform their
         tasks, either browsing, purchasing or uploading offering without having to wait to get a response. With this
-        decision all requests would be forwarded to the server that are available avoiding queuing of requests. \\
+        decision all requests would be forwarded to the server that are available avoiding queuing of requests. & QA-3 \\
         \bottomrule
     \end{tabularx}
 \end{table}
@@ -129,28 +143,37 @@ the \glsplural{provider} with the app. Since this stakeholder can upload data an
 that only approved data type is inserted. In the table below we will describe the tactics used for the these
 two concerns.
 
-\begin{table}[H]
-    \setstretch{1.0}
-    \begin{tabularx}{\textwidth}{|c|c|X|}
-        \toprule
-        \multicolumn{1}{c}{Tactict} & \multicolumn{1}{c}{Pattern} & \multicolumn{1}{c}{Motivation} \\
-        \midrule
-        \textbf{Validate Input} & \gls{Intercepting Validator} & \glsplural{provider} has a big interaction with the app.
-        They can upload files and texts. To make sure that only secure element a inserted into the app, it is important
-        that every input is analyzed before reaching the app and the \glsplural{client} \cite{refbook:CSWT}. \\
-        \bottomrule
-    \end{tabularx}
-\end{table}
+% \begin{table}[H]
+%     \setstretch{1.0}
+%     \begin{tabularx}{\textwidth}{|c|c|X|c|}
+%         \toprule
+%         \multicolumn{1}{c}{Tactict} & \multicolumn{1}{c}{Pattern} & \multicolumn{1}{c}{Motivation} & \multicolumn{1}{c}{QA}\\
+%         \midrule
+%         \textbf{Validate Input} & \gls{Intercepting Validator} & \glsplural{provider} has a big interaction with the app.
+%         They can upload files and texts. To make sure that only secure element a inserted into the app, it is important
+%         that every input is analyzed before reaching the app and the \glsplural{client} \cite{refbook:CSWT}. & \multirow{3}{*}{QA-4} \\
+%         \shortstack{\textbf{Authenticate Actors} \\ \textbf{Authorize Actors}} & \shortstack{Authentication enforcer\\
+%         Authorization enforcer} & To avoid the connection of \gls{bots} we want to allow only registered users to interact with the functionalities 
+%         of the app. This will be done with the third party operators \cite{refonline:wksp}. & QA-4\\
+%         \bottomrule
+%     \end{tabularx}
+% \end{table}
 
 \begin{table}[H]
     \setstretch{1.0}
-    \begin{tabularx}{\textwidth}{|c|c|X|}
-        \toprule
-        \multicolumn{1}{c}{Tactict} & \multicolumn{1}{c}{Pattern} & \multicolumn{1}{c}{Motivation} \\
-        \midrule
-        \shortstack{\textbf{Authenticate Actors} \\ \textbf{Authorize Actors}} & \shortstack{Authentication enforcer\\
-        Authorization enforcer} & To avoid the connection of \gls{bots} we want to allow only registered users to interact with the functionalities 
-        of the app. This will be done with the third party operators \cite{refonline:wksp}. \\
-        \bottomrule
+    \begin{tabularx}{\textwidth}{|c|c|X|c|}
+    \toprule
+    \multicolumn{1}{c}{Tactict} & \multicolumn{1}{c}{Pattern} & \multicolumn{1}{c}{Motivation} & \multicolumn{1}{c}{QA} \\
+    \midrule
+    \multicolumn{1}{|c|}{\multirow{2}{*}{Support User Initiative}} & Observer & The interaction of the users is a main factor
+    of our app. We want them to have fully control of their actions either by cancelling or by resuming an action.
+    & \multirow{3}{*}{QA-4} \\
+    \multicolumn{1}{|c|}{} & Lazy Registration & Avoid having to memorize another password and username may increase 
+    the acceptance of the user. With this pattern we allow them also to browse in the app and seeing what is available 
+    without being registered \cite{refonline:IDUI}. This may give a glimpse of what they get if they join us. &   \\
+
+    Support System Initiative & Observer & By each upload from the \glsplural{provider} we want our \glsplural{client} 
+    to have it on his device, without having to "ask" for it.  &  \\ 
+    \bottomrule
     \end{tabularx}
 \end{table}
