@@ -1,9 +1,40 @@
 \section{Crosscutting Concept}
 
 In this chapter we will present the technical solutions that we will use to develop this project.
-For each quality attribute we will present the chosen tactitcs.
+For each quality attribute we will present the chosen tactics.
 
 \subsection{Solution for Usability}
+
+The core of our app is how easy it is to use. We want our user to navigate through it without being overwhelmed with information
+not related to the main objective: purchase a product or upload a product.
+
+\begin{table}[H]
+    \setstretch{1.0}
+    \begin{tabularx}{\textwidth}{|c|c|X|}
+        \toprule
+        \multicolumn{1}{c}{Tactict} & \multicolumn{1}{c}{Pattern} & \multicolumn{1}{c}{Motivation} \\
+        \midrule
+        \textbf{Support User Initiative } & Observer & The interaction of the users is a main factor of our app.
+        We want them to have fully control of their actions either by cancelling or by resuming an action. \\
+        \textbf{Support User Initiative } & Lazy Registration & Avoid having to memorize another password and username
+        may increase the acceptance of the user. With this pattern we allow them also to browse in the app and seeing
+        what is available without being registered\cite{refonline:IDUI}. This may give a glimpse of what they get
+        if they join us. \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\begin{table}[H]
+    \setstretch{1.0}
+    \begin{tabularx}{\textwidth}{|c|c|X|}
+        \toprule
+        \multicolumn{1}{c}{Tactict} & \multicolumn{1}{c}{Pattern} & \multicolumn{1}{c}{Motivation} \\
+        \midrule
+        \textbf{Support System Initiative} & Observer & By each upload from the \glsplural{provider} we want our
+        \glsplural{client} to have it on his device, without having to "ask" for it.  \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
 
 \subsection{Solution for Interoperability}
 
@@ -71,7 +102,7 @@ party operator, as seen in the picture \ref{fig:sequence_login_payment}.
 \subsection{Solution for Performance}
 
 We want our app to have a fast (no more than 1 second) response time. By clicking on an offer a \gls{client} should
-have it immediately displayed on his/her screen. Updated made by \glsplural{provider} should also be promptly available
+have it immediately displayed on his screen. Updated made by \glsplural{provider} should also be promptly available
 for \glsplural{client} to browse.
 
 \begin{table}[H]
@@ -87,6 +118,8 @@ for \glsplural{client} to browse.
         \bottomrule
     \end{tabularx}
 \end{table}
+
+\newpage
 
 \subsection{Solution for Security}
 
