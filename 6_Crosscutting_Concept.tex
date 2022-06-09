@@ -3,9 +3,9 @@
 In this chapter we will present the technical solutions that we will use to develop this project.
 For each quality attribute we will present the chosen tactitcs.
 
-\subsection{Solutions for Usability}
+\subsection{Solution for Usability}
 
-\subsection{Solutions for Interoperability}
+\subsection{Solution for Interoperability}
 
 The communication with the 3rd party components should during the whole lifetime of the App reliable. Since we are dealing with
 two different services, \gls{mobile payment gateway} and \gls{federated login}, we will describe the integration processes 
@@ -39,7 +39,7 @@ experience, the payment process should also be harmonic with other features.
         \toprule
         \multicolumn{1}{c}{Tactict} & \multicolumn{1}{c}{Pattern} & \multicolumn{1}{c}{Motivation} \\
         \midrule
-        \textbf{Limit Dependencies} & Wrapper & The \gls{api} will be the intermediary for the payment process. For the 
+        \textbf{Limit Dependencies} & \gls{wrapper} & The \gls{api} will be the intermediary for the payment process. For the 
         \glsplural{client} all visible steps will occur in the app, without being sent to another page. On the background
         the \gls{api} will receive the input and send it to the payment gateway. The verification takes place in gateway, 
         which then communicate with the financial institute of the client and send the payment to the \gls{provider} 
@@ -48,7 +48,42 @@ experience, the payment process should also be harmonic with other features.
     \end{tabularx}
 \end{table}
 
+\subsubsection{Federated Authentication}
 
+Using of \gls{federated login} reduces burden of saving user credentials locally. It also improves the Usability so users
+do not have to create and remember another username and password. The authentication process takes place on the third 
+party operator, as seen in the picture \ref{fig:sequence_login_payment}. 
 
+\begin{table}[H]
+    \setstretch{1.0}
+    \begin{tabularx}{\textwidth}{|c|c|X|}
+        \toprule
+        \multicolumn{1}{c}{Tactict} & \multicolumn{1}{c}{Pattern} & \multicolumn{1}{c}{Motivation} \\
+        \midrule
+        \textbf{\gls{microservice}} & \gls{API Gateway} & It increases security, so the microservice is not directly
+        exposed to the external world. It reduces the complexity of the microservice, since the gateway will have to deal
+        with data transfer rate, tokens and other activities. Dealing with failures would also be handled and logged
+        by the microservice \cite{refonline:javtop}.\\
+        \bottomrule
+    \end{tabularx}
+\end{table}
 
-\subsection{Solutions for Performance}
+\subsection{Solution for Performance}
+
+We want our app to have a fast (no more than 1 second) response time. By clicking on an offer a \gls{client} should
+have it immediately displayed on his/her screen. Updated made by \glsplural{provider} should also be promptly available
+for \glsplural{client} to browse.
+
+\begin{table}[H]
+    \setstretch{1.0}
+    \begin{tabularx}{\textwidth}{|c|c|X|}
+        \toprule
+        \multicolumn{1}{c}{Tactict} & \multicolumn{1}{c}{Pattern} & \multicolumn{1}{c}{Motivation} \\
+        \midrule
+        \textbf{Increase Resources} & \gls{Load Balancer} & Specially during peak times we want our users to have a 
+        smoothly and fast interaction with the app. \glsplural{provider} and \glsplural{client} should perform their
+        tasks, either browsing, purchasing or uploading offering without having to wait to get a response. With this
+        decision all requests would be forwarded to the server that are available avoiding queuing of requests. \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
