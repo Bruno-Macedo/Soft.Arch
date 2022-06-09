@@ -87,3 +87,37 @@ for \glsplural{client} to browse.
         \bottomrule
     \end{tabularx}
 \end{table}
+
+\subsection{Solution for Security}
+
+There are two security concerns that need to be addressed to the users. The first one deals with the authentication
+and payment process. This will be managed by the third party providers. The second one involves the interaction of
+the \glsplural{provider} with the app. Since this stakeholder can upload data and file to the app it is important
+that only approved data type is inserted. In the table below we will describe the tactics used for the these
+two concerns.
+
+\begin{table}[H]
+    \setstretch{1.0}
+    \begin{tabularx}{\textwidth}{|c|c|X|}
+        \toprule
+        \multicolumn{1}{c}{Tactict} & \multicolumn{1}{c}{Pattern} & \multicolumn{1}{c}{Motivation} \\
+        \midrule
+        \textbf{Validate Input} & \gls{Intercepting Validator} & \glsplural{provider} has a big interaction with the app.
+        They can upload files and texts. To make sure that only secure element a inserted into the app, it is important
+        that every input is analyzed before reaching the app and the \glsplural{client} \cite{refbook:CSWT}. \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\begin{table}[H]
+    \setstretch{1.0}
+    \begin{tabularx}{\textwidth}{|c|c|X|}
+        \toprule
+        \multicolumn{1}{c}{Tactict} & \multicolumn{1}{c}{Pattern} & \multicolumn{1}{c}{Motivation} \\
+        \midrule
+        \shortstack{\textbf{Authenticate Actors} \\ \textbf{Authorize Actors}} & \shortstack{Authentication enforcer\\
+        Authorization enforcer} & To avoid the connection of \gls{bots} we want to allow only registered users to interact with the functionalities 
+        of the app. This will be done with the third party operators \cite{refonline:wksp}. \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
