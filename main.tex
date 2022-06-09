@@ -1,92 +1,22 @@
 \input{head}
 \makeglossaries
+\loadglsentries{glossar}
 
-\newacronym{fao}{FAO}{Food and Agriculture Organization of the United Nations}
-\newacronym{un}{UN}{United Nations}
-\newacronym{api}{API}{Application Programming Interface}
-
-
-\newglossaryentry{user} {
-    name={User},
-    plural={users},
-    description={See stakeholder}
-}
-
-\newglossaryentry{app} {
-    name={App},
-    description={It refers to the mobile application to be developed}
-}
-\newglossaryentry{stakeholder} {
-    name={Stakeholder},
-    plural={stakeholders},
-    description={Describes all kind of potential person or entity that may have interest using the app}
-}
-\newglossaryentry{client} {
-    name={Client},
-    plural={clients},
-    description={Since we have two major stakeholders that will use the app, the word client will
-    specify the one that places an order in the app}
-}
-\newglossaryentry{provider} {
-    name={Provider},
-    plural={providers},
-    description={The second major stakeholders are those who offer their products. They can be
-                restaurants, bakeries, pastries and similar}
-}
-\newglossaryentry{upload} {
-    name={Upload},
-    description={Will designate the act of pushing textual or visual content into the app. It will
-                be mostly done by a provider}
-}
-\newglossaryentry{register} {
-    name={Register},
-    description={Describes the act of inputting name, e-mail, company name, product or any other kind of
-    textual data used to identify a stakeholder or a product}
-}
-\newglossaryentry{activity diagram} {
-    name={Activity Diagram},
-    description={This kind of diagram shows the behavior of a system, it depicts in a graphical fashion 
-    the logic of a single use case \cite{refinbook:Baresi2009}.}
-}
-\newglossaryentry{class diagram} {
-    name={Class Diagram},
-    description={This kind of diagram presents the structure of a system with its classes, attributes,
-    methods and relationships\cite{refonline:IBMCD}}
-}
-\newglossaryentry{use case diagram} {
-    name={Use Case Diagram},
-    description={This kind of diagram presents the main requirements and functionalities of a systems. It displays
-    a simplified overview of core purpose of the application \cite{refart:YWRUS}}
-}
-\newglossaryentry{mobile payment gateway} {
-    name={Mobile Payment Gateway},
-    description={Those services works as an intermediary between customer, merchant and bank/credit card company. 
-    Here a payment request is sent to the gateway and forwarded to the approval instances. The core functionality 
-    of those gateways is the cryptography within the communication steps\cite{refonline:VPGI}}
-}
-
-\newglossaryentry{federated login} {
-    name={Federated Login},
-    description={Authentication method in which users use existing accounts to gain access to another domains or systems
-    without the need of creating new credentials. The authenticity of a user is attested by service and granted to another 
-    \cite{refonline:MRFL}}
-}
-\newglossaryentry{system response} {
-    name={System Response},
-    description={The output of a system after an input \cite{refonline:HWHE}.
-    \cite{refonline:MRFL}}
-}
-\newglossaryentry{API} {
-    name={Application Programming Interface - API},
-    plural={APIs},
-    description={Software intermediary that promotes the communication between different systems/applications/
-    softwares\cite{refonline:MSAPI}}
-}
 
 % &as_qdr=y2 (find date)
 
 
-
+\fancypagestyle{lscape}{
+\fancyhf{} %Clears the header/footer
+\fancyfoot{% Footer
+\makebox[\textwidth][r]{% Right
+  \rlap{\hspace{1cm}% Push out of margin by \footskip
+    \smash{% Remove vertical height
+      \raisebox{4.87in}{% Raise vertically
+        \rotatebox{90}{\thepage}}}}}}% Rotate counter-clockwise
+\renewcommand{\headrulewidth}{0pt}% No header rule
+\renewcommand{\footrulewidth}{0pt}% No footer rule
+}
 
 \begin{document}
     \include{titelblat}

@@ -26,9 +26,12 @@ The following \gls{activity diagram} depicts the register and login procedure wi
 
 From the third party applications we expect the following interaction:
 
-%% sequence diagram for login and payment
-
-
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{assets/sequence_login_payment.jpg}
+    \caption{Sequence of actions with 3rd party applications}
+    \label{fig:sequence_login_payment}
+\end{figure}
 
 \subsection{Structural view}
 To describe this view we choose a \gls{class diagram}. With it we may provide a static description of elements
@@ -39,7 +42,7 @@ can offer one or more products. A provider will also fall into the category rest
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{assets/Provider_Addr_Item.jpg}
+    \includegraphics[width=0.7\textwidth]{assets/Provider_Addr_Item.jpg}
     \caption{Provider overview}
     \label{fig:Provider_addr_item}
 \end{figure}
@@ -50,7 +53,7 @@ with the \glsplural{provider}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{assets/client_CD.jpg}
+    \includegraphics[width=0.6\textwidth]{assets/client_CD.jpg}
     \caption{Client Overview}
     \label{fig:client_CD}
 \end{figure}
@@ -60,18 +63,22 @@ to stablish the payment procedures.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{assets/order_cd.jpg}
+    \includegraphics[width=0.6\textwidth]{assets/order_cd.jpg}
     \caption{Order Overview}
     \label{fig:order_cd}
 \end{figure}
+
+\newpage
+\thispagestyle{lscape}
+\begin{landscape}
 
 This final graphic show the whole classes in combination:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{assets/classes_CD.jpg}
+    \includegraphics[width=1.5\textwidth]{assets/classes_CD.jpg}
     \caption{Classes Overview}
     \label{fig:class_CD}
 \end{figure}
 
- 
+\end{landscape}
