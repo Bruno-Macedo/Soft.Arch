@@ -52,6 +52,8 @@ the needs our \glsplural{stakeholder} \cite{refbook:DSHC}.
         QA-6 & Performance & A \gls{client} opens the app and he can immediately search for products or \glsplural{provider}. & UC-2 \\
         QA-7 & Performance & A \gls{client} chooses a \gls{provider} and places his order. After the confirmation
         of payment, a push-message is displayed in the app confirming the purchase. & UC-3 \\
+        QA-8 & Security & The payment process should be secure and within the app. It should also give the \gls{client} the feeling
+        of security. The \gls{client} inserts his payment information it is processed.  & UC-4 \& QA-5 \\
         \bottomrule
     \end{tabularx}
 \end{table}
@@ -157,3 +159,36 @@ The defined quality attributes are represented in the following scenarios:
     \end{tabularx}
 \end{table}
 
+
+
+\begin{table}[H]
+    \begin{tabularx}{\textwidth}{|c|X|}
+        \hline
+        \multicolumn{2}{c}{\textbf{Secure}} \\
+        \hline
+        \toprule
+        \multicolumn{1}{c}{Scenario} & \multicolumn{1}{c}{Value} \\
+        \midrule
+        Source & \gls{client}  \\
+        Stimulus & input payment data \\
+        Artifact & app \\
+        Environment & weekend between 3 and 7 PM \\
+        Response & immediate forwarding of the data to the \gls{api} \\
+        Response Measure &  ??????????? \\
+         & \\
+        Source & \gls{client}  \\
+        Stimulus & wants to search for a \gls{provider} \\
+        Artifact & app \\
+        Environment & peak period, between 6 and 7 pm on a Friday \\
+        Response & immediate access to the offers \\
+        Response Measure & how quickly does the client's device get update of availabilities \\
+        & \\
+        Source & \gls{client}  \\
+        Stimulus & places an order \\
+        Artifact & platform \\
+        Environment & peak period, between 6 and 7 pm on a Friday \\
+        Response & confirmation of payment / payment declined \\
+        Response Measure & How long did take until the client get the confirmation/declined of payment?\\
+        \bottomrule
+    \end{tabularx}
+\end{table}
