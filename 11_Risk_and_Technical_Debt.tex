@@ -10,43 +10,51 @@ To measure the risks of this project we will use the following 3x3 risk matrix, 
     \label{fig:risk_matrix_template}
 \end{figure}
 
-The elements used to identify the risk are shown in the figure \ref{fig:technical_context}. The table below represents
-the identified risk value:
+
+The elements used to identify the risk are shown in the picture below:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{assets/risk_technical_context.jpg}
+    \caption{Modified from Figure \ref{fig:technical_context}}
+    \label{fig:risk_technical_context}
+\end{figure}
 
 \newpage
-\thispagestyle{lscape}
-\begin{landscape}
+The following risk table was defined after several discussion with the team members:
 
-    \begin{table}[H]
-        \setstretch{1.0}
-        \begin{tabularx}{\textwidth}{|X|c|c|c|c|c|c|}
-            \toprule
-            \multicolumn{1}{c}{\textbf{Risk Criteria} } & \multicolumn{1}{X}{Client Graphical Interface} & \multicolumn{1}{X}{Provider Graphical Interface} &
-            \multicolumn{1}{c}{Offer Database } & \multicolumn{1}{c}{API} & \multicolumn{1}{X}{External Payment Service}  &
-            \multicolumn{1}{c}{External Login/Registration Service} \\
-            \midrule
-            Unproven technology         &  &  &  &  &  & \\
-            \hline
-            Performancey                &  &  &  &  &  & \\
-            \hline
-            Scalability                 &  &  &  &  &  & \\
-            \hline
-            Availability                &  &  &  &  &  & \\
-            \hline
-            Data loss                   &  &  &  &  &  & \\
-            \hline
-            Single points of failure    &  &  &  &  &  & \\
-            \hline
-            Security                    &  &  &  &  &  & \\
-            \hline
-            \bottomrule
-        \end{tabularx}
+\begin{table}[H]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{lllllll}
+    \hline
+    \multicolumn{1}{c}{\textbf{Risk Criteria}}              & \multicolumn{1}{c}{1} & \multicolumn{1}{c}{2} & \multicolumn{1}{c}{3} & \multicolumn{1}{c}{4} & \multicolumn{1}{c}{5} & \multicolumn{1}{c}{6} \\ \hline
+    \multicolumn{1}{|l|}{\textbf{Unproven technology}}      & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} \\ \hline
+    \multicolumn{1}{|l|}{\textbf{Performance}}              & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} \\ \hline
+    \multicolumn{1}{|l|}{\textbf{Scalability}}              & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} \\ \hline
+    \multicolumn{1}{|l|}{\textbf{Availability}}             & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} \\ \hline
+    \multicolumn{1}{|l|}{\textbf{Data loss}}                & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} \\ \hline
+    \multicolumn{1}{|l|}{\textbf{Single points of failure}} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{4} & \multicolumn{1}{l|}{4} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} \\ \hline
+    \multicolumn{1}{|l|}{\textbf{Security}}                 & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{3} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{2} \\ \hline
+    \end{tabular}%
+    }
     \end{table}
 
-\end{landscape}
+\subsection{Motivation}
 
-
-
-
-
-
+\begin{table}[H]
+    \setstretch{1.0}
+    \begin{tabularx}{\textwidth}{lcX}
+        \toprule
+        \textbf{Risk Criteria}} & 1- Client Graphical Interface & 1- Provider Graphical Interface   \\
+        \midrule
+        \textbf{Unproven technology}& xxxxxxxxxx & xxxxxxxxxxxxxxxxxxxxxxx \\
+        \textbf{Performance} & xxxxxxxxxxxx & A xxxxxxxxxxxxxxxxxxxxxxxxxx  \\
+        \textbf{Scalability} & xxxxxxxxxxxxxxx & xxxxxxxxxxxxxx  \\
+        \textbf{Availability} & xxxxxxxxxxxx & xxxxxxxxxxxxxxx \\
+        \textbf{Data loss} & xxxxxxxxxxxx & xxxxxxxxxxxxxxxxxxxxxxxxxxx  \\
+        \textbf{Single points of failure} & xxxxxxxxxx & xxxxxxxxxxxxxxxxxxxxxx \\
+        \textbf{Security} & xxxxxxx & xxxxxxxxxxxxxxxxxxxxxxxx \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
