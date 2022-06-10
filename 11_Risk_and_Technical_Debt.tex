@@ -26,9 +26,12 @@ The following risk table was defined after several discussion with the team memb
 \begin{table}[H]
     \centering
     \resizebox{\textwidth}{!}{%
-    \begin{tabular}{lllllll}
-    \hline
-    \multicolumn{1}{c}{\textbf{Risk Criteria}}              & \multicolumn{1}{c}{1} & \multicolumn{1}{c}{2} & \multicolumn{1}{c}{3} & \multicolumn{1}{c}{4} & \multicolumn{1}{c}{5} & \multicolumn{1}{c}{6} \\ \hline
+    \begin{tabular}{|l|llllll}
+    %\multicolumn{1}{|c|}{\textbf{{Risk Criteria}} & \multicolumn{6}{|c|}{\textbf{Item}} \\
+    \toprule
+    \multicolumn{1}{c}{\textbf{Risk Criteria}}              & \multicolumn{6}{c}{\textbf{Element ID}} \\ \hline
+    \midrule
+    \multicolumn{1}{c}{}              & \multicolumn{1}{c}{\textbf{1}} & \multicolumn{1}{c}{\textbf{2}} & \multicolumn{1}{c}{\textbf{3}} & \multicolumn{1}{c}{\textbf{4}} & \multicolumn{1}{c}{\textbf{5}} & \multicolumn{1}{c}{\textbf{6}} \\ \hline
     \multicolumn{1}{|l|}{\textbf{Unproven technology}}      & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} \\ \hline
     \multicolumn{1}{|l|}{\textbf{Performance}}              & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} \\ \hline
     \multicolumn{1}{|l|}{\textbf{Scalability}}              & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} \\ \hline
@@ -36,25 +39,61 @@ The following risk table was defined after several discussion with the team memb
     \multicolumn{1}{|l|}{\textbf{Data loss}}                & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} \\ \hline
     \multicolumn{1}{|l|}{\textbf{Single points of failure}} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{4} & \multicolumn{1}{l|}{4} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} \\ \hline
     \multicolumn{1}{|l|}{\textbf{Security}}                 & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{3} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{2} \\ \hline
-    \end{tabular}%
+    \bottomrule
+\end{tabular}%
     }
-    \end{table}
+\end{table}
+
+\textbf{}
 
 \subsection{Motivation}
 
 \begin{table}[H]
     \setstretch{1.0}
-    \begin{tabularx}{\textwidth}{lcX}
+        \begin{tabularx}{\textwidth}{|l|X|X|X|}
         \toprule
-        \textbf{Risk Criteria}} & 1- Client Graphical Interface & 1- Provider Graphical Interface   \\
+           \textbf{Risk Criteria} & \textbf{1 Client Graphical Interface} & \textbf{2 Provider Graphical Interface} & \textbf{3 Offer Database} \\
         \midrule
-        \textbf{Unproven technology}& xxxxxxxxxx & xxxxxxxxxxxxxxxxxxxxxxx \\
-        \textbf{Performance} & xxxxxxxxxxxx & A xxxxxxxxxxxxxxxxxxxxxxxxxx  \\
-        \textbf{Scalability} & xxxxxxxxxxxxxxx & xxxxxxxxxxxxxx  \\
-        \textbf{Availability} & xxxxxxxxxxxx & xxxxxxxxxxxxxxx \\
-        \textbf{Data loss} & xxxxxxxxxxxx & xxxxxxxxxxxxxxxxxxxxxxxxxxx  \\
-        \textbf{Single points of failure} & xxxxxxxxxx & xxxxxxxxxxxxxxxxxxxxxx \\
-        \textbf{Security} & xxxxxxx & xxxxxxxxxxxxxxxxxxxxxxxx \\
+        \textbf{Unproven technology}& \textit{not applicable} & \textit{not applicable} & \textit{not applicable} \\
+        \hline
+        \textbf{Performance} & Concerns regarding a such dynamic shop. Data displayed & Concerns regarding a such dynamic shop. Data update. & \textit{not applicable} \\
+        \hline
+        \textbf{Scalability} & \textit{not applicable} & \textit{not applicable} & One database can be overwhelmed if the number of user is not limited for this prototype version \\
+        \hline
+        \textbf{Availability} & xxxxxxxxxx & xxxxxxxxxx & xxxxxxxxxx \\
+        \hline
+        \textbf{Data loss} & xxxxxxxxxx & xxxxxxxxxx & xxxxxxxxxx \\
+        \hline
+        \textbf{Single points of failure} & xxxxxxxxxx & xxxxxxxxxx & xxxxxxxxxx \\
+        \hline
+        \textbf{Security} & xxxxxxxxxx & xxxxxxxxxx & xxxxxxxxxx \\
         \bottomrule
     \end{tabularx}
 \end{table}
+
+
+\begin{table}[H]
+    \setstretch{1.0}
+    \begin{tabularx}{\textwidth}{|l|X|X|X|}
+        \toprule
+        \textbf{Risk Criteria} & \textbf{4 API} & \textbf{5 External Payment Service} & \textbf{6 External Authentication Service} \\
+        \midrule
+        \textbf{Unproven technology} & \textit{not applicable} & \textit{not applicable}  & \textit{not applicable}  \\
+        \hline
+        \textbf{Performance} & \textit{not applicable} & \textit{not applicable}  & \textit{not applicable} \\
+        \hline
+        \textbf{Scalability} & \textit{not applicable} & \textit{not applicable} & \textit{not applicable} \\
+        \hline
+        \textbf{Availability} & The access to the products become unstable. & \textit{not applicable} & \textit{not applicable} \\
+        \hline
+        \textbf{Data loss} & \textit{not applicable} & \textit{not applicable} & \textit{not applicable} \\
+        \hline
+        \textbf{Single points of failure} & In case of failure login, registration and payment are compromised. & \textit{not applicable} & \textit{not applicable} \\
+        \hline
+        \textbf{Security} & Lack of practical experience within the team about this topic. we rely on the service provided by the third party companies 
+        & SLA Less than 99.5\% but equal to or greater than 95.0\% \cite{refmisc:paycSLA} & SLA < 99.99\% - >= 99.9\% \cite{refmisc:auth0sla}	\\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+%1 - 
+%
