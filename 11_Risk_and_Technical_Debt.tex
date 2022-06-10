@@ -35,8 +35,8 @@ The following risk table was defined after several discussion with the team memb
     \multicolumn{1}{|l|}{\textbf{Unproven technology}}      & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} \\ \hline
     \multicolumn{1}{|l|}{\textbf{Performance}}              & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} \\ \hline
     \multicolumn{1}{|l|}{\textbf{Scalability}}              & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} \\ \hline
-    \multicolumn{1}{|l|}{\textbf{Availability}}             & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} \\ \hline
-    \multicolumn{1}{|l|}{\textbf{Data loss}}                & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} \\ \hline
+    \multicolumn{1}{|l|}{\textbf{Availability}}             & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{4} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} \\ \hline
+    \multicolumn{1}{|l|}{\textbf{Data loss}}                & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{3} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} \\ \hline
     \multicolumn{1}{|l|}{\textbf{Single points of failure}} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{4} & \multicolumn{1}{l|}{4} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} \\ \hline
     \multicolumn{1}{|l|}{\textbf{Security}}                 & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{3} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{2} \\ \hline
     \bottomrule
@@ -58,19 +58,23 @@ The following risk table was defined after several discussion with the team memb
         \hline
         \textbf{Performance} & Concerns regarding a such dynamic shop. Data displayed & Concerns regarding a such dynamic shop. Data update. & \textit{not applicable} \\
         \hline
-        \textbf{Scalability} & \textit{not applicable} & \textit{not applicable} & One database can be overwhelmed if the number of user is not limited for this prototype version \\
+        \textbf{Scalability} & \textit{not applicable} & \textit{not applicable} & One database can be overwhelmed if the number of user is not limited for this prototype version. \\
         \hline
-        \textbf{Availability} & xxxxxxxxxx & xxxxxxxxxx & xxxxxxxxxx \\
+        \textbf{Availability} & \textit{not applicable} & \textit{not applicable} & In case of intense traffic the latency can be more than expected. \\
         \hline
-        \textbf{Data loss} & xxxxxxxxxx & xxxxxxxxxx & xxxxxxxxxx \\
+        \textbf{Data loss} & \textit{not applicable} & \textit{not applicable} & Nowadays no company can survive in case of data loss. Technical damages can be 
+        mostly easy fixed, but moral damage stays forever. \\
         \hline
-        \textbf{Single points of failure} & xxxxxxxxxx & xxxxxxxxxx & xxxxxxxxxx \\
+        \textbf{Single points of failure} & \textit{not applicable} & \textit{not applicable} & Only one component gives always this risk. Increasing the 
+        number of components increases also the total development costs \\
         \hline
-        \textbf{Security} & xxxxxxxxxx & xxxxxxxxxx & xxxxxxxxxx \\
+        \textbf{Security} & \textit{not applicable} the client's input is always processed
+        by the API and by the third party providers & If no strong data filtering exists, providers can upload
+        malicious files or execute unwished commands. & The filtering of the input should occur mostly on the server side, Source
+        no external access can figure out, how it is implemented. \\
         \bottomrule
     \end{tabularx}
 \end{table}
-
 
 \begin{table}[H]
     \setstretch{1.0}
