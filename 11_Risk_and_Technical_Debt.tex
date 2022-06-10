@@ -10,68 +10,74 @@ To measure the risks of this project we will use the following 3x3 risk matrix, 
     \label{fig:risk_matrix_template}
 \end{figure}
 
+On the left side we see the risk table  defined after several discussion with the team members.
+On the right side there are the elements to which the table refers to:
 
-The elements used to identify the risk are shown in the picture below:
+\begin{table}[H]
+	\begin{minipage}{0.5\linewidth}
+		\label{table:student}
+		\centering
+        \resizebox{7cm}{!}{%
+        \begin{tabular}{|l|l|l|l|l|l|l|}
+            \toprule
+            \multicolumn{1}{c}{\multirow{2}{*}{\textbf{Risk Criteria}}} & \multicolumn{6}{c}{\textbf{Element ID}} \\ 
+            %\midrule
+            \multicolumn{1}{c}{}            & \multicolumn{1}{c}{\textbf{1}} & \multicolumn{1}{c}{\textbf{2}} & \multicolumn{1}{c}{\textbf{3}} & \multicolumn{1}{c}{\textbf{4}} & \multicolumn{1}{c}{\textbf{5}} & \multicolumn{1}{c}{\textbf{6}} \\ \hline
+            \textbf{Unproven technology}      & {\cellcolor{green} 1} & {\cellcolor{green} 1} & {\cellcolor{green} 1} & {\cellcolor{green} 1} & {\cellcolor{green} 1} & {\cellcolor{green} 1} \\ \hline
+            \textbf{Performance}              & {\cellcolor{green} 2} & {\cellcolor{green} 2} & {\cellcolor{green} 1} & {\cellcolor{green} 1} & {\cellcolor{green} 1} & {\cellcolor{green} 1} \\ \hline
+            \textbf{Scalability}              & {\cellcolor{green} 1} & {\cellcolor{green} 1} & {\cellcolor{green} 2} & {\cellcolor{green} 1} & {\cellcolor{green} 1} & {\cellcolor{green} 1} \\ \hline
+            \textbf{Availability}             & {\cellcolor{green} 1} & {\cellcolor{green} 1} & {\cellcolor{yellow} 4} & {\cellcolor{green} 2} & {\cellcolor{green} 1} & {\cellcolor{green} 1} \\ \hline
+            \textbf{Data loss}                & {\cellcolor{green} 1} & {\cellcolor{green} 1} & {\cellcolor{yellow} 3} & {\cellcolor{green} 1} & {\cellcolor{green} 1} & {\cellcolor{green} 1} \\ \hline
+            \textbf{Single points of failure} & {\cellcolor{green} 1} & {\cellcolor{green} 1} & {\cellcolor{yellow} 4} & {\cellcolor{yellow} 4} & {\cellcolor{green} 1} & {\cellcolor{green} 1} \\ \hline
+            \textbf{Security}                 & {\cellcolor{green} 1} & {\cellcolor{green} 2} & {\cellcolor{yellow} 3} & {\cellcolor{green} 2} & {\cellcolor{green} 2} & {\cellcolor{green} 2} \\ \hline
+            %\bottomrule
+        \end{tabular}%
+        }
+	\end{minipage}\hfill
+	\begin{minipage}{0.45\linewidth}
+		\centering
+		\includegraphics[width=6cm]{assets/risk_technical_context.jpg}
+		\captionof{figure}{Modified from Figure \ref{fig:technical_context}}
+		\label{ }
+	\end{minipage}
+\end{table}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.4\textwidth]{assets/risk_technical_context.jpg}
-    \caption{Modified from Figure \ref{fig:technical_context}}
-    \label{fig:risk_technical_context}
-\end{figure}
 
-\newpage
-The following risk table was defined after several discussion with the team members:
+% backup figure with numbers
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.4\textwidth]{assets/risk_technical_context.jpg}
+%     \caption{Modified from Figure \ref{fig:technical_context}}
+%     \label{fig:risk_technical_context}
+% \end{figure}
 
 % backup
 % \begin{table}[H]
 %     \centering
-%     \resizebox{\textwidth}{!}{%
-%     \begin{tabular}{|l|llllll}
+%     \resizebox{7cm}{!}{%
+%     \begin{tabular}{|l|l|l|l|l|l|l|}
 %     \toprule
-%     \multicolumn{1}{c}{\textbf{Risk Criteria}}              & \multicolumn{6}{c}{\textbf{Element ID}} \\ \hline
-%     \midrule
-%     \multicolumn{1}{c}{}              & \multicolumn{1}{c}{\textbf{1}} & \multicolumn{1}{c}{\textbf{2}} & \multicolumn{1}{c}{\textbf{3}} & \multicolumn{1}{c}{\textbf{4}} & \multicolumn{1}{c}{\textbf{5}} & \multicolumn{1}{c}{\textbf{6}} \\ \hline
-%     \multicolumn{1}{|l|}{\textbf{Unproven technology}}      & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} \\ \hline
-%     \multicolumn{1}{|l|}{\textbf{Performance}}              & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} \\ \hline
-%     \multicolumn{1}{|l|}{\textbf{Scalability}}              & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} \\ \hline
-%     \multicolumn{1}{|l|}{\textbf{Availability}}             & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{4} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} \\ \hline
-%     \multicolumn{1}{|l|}{\textbf{Data loss}}                & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{3} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} \\ \hline
-%     \multicolumn{1}{|l|}{\textbf{Single points of failure}} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{4} & \multicolumn{1}{l|}{4} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{1} \\ \hline
-%     \multicolumn{1}{|l|}{\textbf{Security}}                 & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{3} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{2} \\ \hline
-%     \bottomrule
+%     \multicolumn{1}{c}{\multirow{2}{*}{\textbf{Risk Criteria}}} & \multicolumn{6}{c}{\textbf{Element ID}} \\ 
+%     %\midrule
+%     \multicolumn{1}{c}{}            & \multicolumn{1}{c}{\textbf{1}} & \multicolumn{1}{c}{\textbf{2}} & \multicolumn{1}{c}{\textbf{3}} & \multicolumn{1}{c}{\textbf{4}} & \multicolumn{1}{c}{\textbf{5}} & \multicolumn{1}{c}{\textbf{6}} \\ \hline
+%     \textbf{Unproven technology}      & {\cellcolor{green} 1} & {\cellcolor{green} 1} & {\cellcolor{green} 1} & {\cellcolor{green} 1} & {\cellcolor{green} 1} & {\cellcolor{green} 1} \\ \hline
+%     \textbf{Performance}              & {\cellcolor{green} 2} & {\cellcolor{green} 2} & {\cellcolor{green} 1} & {\cellcolor{green} 1} & {\cellcolor{green} 1} & {\cellcolor{green} 1} \\ \hline
+%     \textbf{Scalability}              & {\cellcolor{green} 1} & {\cellcolor{green} 1} & {\cellcolor{green} 2} & {\cellcolor{green} 1} & {\cellcolor{green} 1} & {\cellcolor{green} 1} \\ \hline
+%     \textbf{Availability}             & {\cellcolor{green} 1} & {\cellcolor{green} 1} & {\cellcolor{yellow} 4} & {\cellcolor{green} 2} & {\cellcolor{green} 1} & {\cellcolor{green} 1} \\ \hline
+%     \textbf{Data loss}                & {\cellcolor{green} 1} & {\cellcolor{green} 1} & {\cellcolor{yellow} 3} & {\cellcolor{green} 1} & {\cellcolor{green} 1} & {\cellcolor{green} 1} \\ \hline
+%     \textbf{Single points of failure} & {\cellcolor{green} 1} & {\cellcolor{green} 1} & {\cellcolor{yellow} 4} & {\cellcolor{yellow} 4} & {\cellcolor{green} 1} & {\cellcolor{green} 1} \\ \hline
+%     \textbf{Security}                 & {\cellcolor{green} 1} & {\cellcolor{green} 2} & {\cellcolor{yellow} 3} & {\cellcolor{green} 2} & {\cellcolor{green} 2} & {\cellcolor{green} 2} \\ \hline
+%     %\bottomrule
 % \end{tabular}%
 %     }
 % \end{table}
-
-\begin{table}[H]
-    \centering
-    \resizebox{\textwidth}{!}{%
-    \begin{tabular}{|l|l|l|l|l|l|l|}
-    \toprule
-    \multicolumn{1}{c}{\multirow{2}{*}{\textbf{Risk Criteria}}} & \multicolumn{6}{c}{\textbf{Element ID}} \\ 
-    %\midrule
-    \multicolumn{1}{c}{}            & \multicolumn{1}{c}{\textbf{1}} & \multicolumn{1}{c}{\textbf{2}} & \multicolumn{1}{c}{\textbf{3}} & \multicolumn{1}{c}{\textbf{4}} & \multicolumn{1}{c}{\textbf{5}} & \multicolumn{1}{c}{\textbf{6}} \\ \hline
-    \textbf{Unproven technology}      & 1 & 1 & 1 & 1 & 1 & 1 \\ \hline
-    \textbf{Performance}              & 2 & 2 & 1 & 1 & 1 & 1 \\ \hline
-    \textbf{Scalability}              & 1 & 1 & 2 & 1 & 1 & 1 \\ \hline
-    \textbf{Availability}             & 1 & 1 & 4 & 2 & 1 & 1 \\ \hline
-    \textbf{Data loss}                & 1 & 1 & 3 & 1 & 1 & 1 \\ \hline
-    \textbf{Single points of failure} & 1 & 1 & 4 & 4 & 1 & 1 \\ \hline
-    \textbf{Security}                 & 1 & 2 & 3 & 2 & 2 & 2 \\ \hline
-    %\bottomrule
-\end{tabular}%
-    }
-\end{table}
-
-
 
 
 \subsection{Motivation}
 
 \begin{table}[H]
     \setstretch{1.0}
-        \begin{tabularx}{\textwidth}{|l|X|X|X|}
+        \begin{tabularx}{\textwidth}{|c|X|X|X|}
         \toprule
            \textbf{Risk Criteria} & \textbf{1 Client Graphical Interface} & \textbf{2 Provider Graphical Interface} & \textbf{3 Offer Database} \\
         \midrule
@@ -99,7 +105,7 @@ The following risk table was defined after several discussion with the team memb
 
 \begin{table}[H]
     \setstretch{1.0}
-    \begin{tabularx}{\textwidth}{|l|X|X|X|}
+    \begin{tabularx}{\textwidth}{|c|X|X|X|}
         \toprule
         \textbf{Risk Criteria} & \textbf{4 API} & \textbf{5 External Payment Service} & \textbf{6 External Authentication Service} \\
         \midrule
