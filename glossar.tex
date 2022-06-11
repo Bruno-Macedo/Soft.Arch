@@ -140,4 +140,21 @@
     description=\glslink{DoSS}{Denial of Service}
 }
 
+% here goes to the description
+\newglossaryentry{SLA2}{
+    name=\glslink{SLA}{Service Level Agreement (\gls{SLA})},
+    description={Contract between a service provider and a consumer regarding the expected level of service that is accepted.
+    This contract is based on defined metrics, measures to remediate occurring problems and penalties if the contracted
+    level is not achieved \cite{refmisc:SOSLA} }
+}
+
+% here goes to the acronym
+\newglossaryentry{SLA}{
+    type=\acronymtype,
+    name=SLA,
+    first={Service Level Agreement (SLA)\glsadd{SLA2}},
+    see=[Glossary:]{\gls{SLA2}}, 
+    description=\glslink{SLA2}{Service Level Agreement}
+}
+
 
