@@ -78,8 +78,15 @@ TEXDATEI="main.tex"
 echo "textdatei: " $TEXTDATEI
 
 # Kompilierung von .tex Datei und Erzeugung einer .pdf Datei: ${TEXDATEI}"
-pdflatex "${TEXDATEI}" &> /dev/null
-fehlermeldung "PDF-Datei konnte nicht erzeugt werden."
+pdflatex "${TEXDATEI}" #&> /dev/null
+
+if [[ "${?}" -ne 0 ]]
+then
+    echo "PDF-Datei konnte nicht erzeugt werden."
+    #fehlermeldung "PDF-Datei konnte nicht erzeugt werden."
+    exit 1
+fi
+#fehlermeldung "PDF-Datei konnte nicht erzeugt werden."
 
 VARGLOS=$(basename -s .tex ${TEXDATEI})
 echo "Varglos:" ${VARGLOS}
