@@ -12,6 +12,11 @@
 \glsgroupheading{F}\relax \glsresetentrylist %
 \glossentry{fao}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{5}}}\glsgroupskip
+\glsgroupheading{S}\relax \glsresetentrylist %
+\glossentry{SLA}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{23}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{30}\delimN 
+		\glsseeformat[Glossary:]{\gls {SLA2}}{Z}}}\glsgroupskip
 \glsgroupheading{U}\relax \glsresetentrylist %
 \glossentry{un}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{5}}}%
