@@ -2,6 +2,48 @@
 
 \subsection{Quality Tree}
 
+The priority of each element will be expressed using the following notation:
+
+\begin{itemize}
+    \item ([Customer view], [Architect view])
+    \item H - High
+    \item M - Medium
+    \item L - Low
+\end{itemize}
+
+\Glsplural{user} and the development team have different perspective of an app. The former think about how attractive and easy to use
+it is, the latter want to build something what achieves a goal. For that reason is the interpretation of the priority sometimes
+so different, according to which group has been asked.
+
+\begin{table}[H]
+    \setstretch{1.0}
+    \begin{tabularx}{\textwidth}{lXX}
+        \toprule
+        ID & For \Glsplural{user} & For Development Team  \\
+        \midrule
+        QA-1 & All important information should be there so his shop can be well promoted & 
+        An initial registration with filter for the input is important, but estetical details are
+        the goal now. \\
+        QA-2 & Once he get something new, he wants to make it available & First we need to guarantee that no overrides occur
+        than they see if it is promptly displayed. \\
+        QA-3 & They want to browse and see all available options & Search engine can be very helpful, 
+        but filtering can wait a litte, since it does not affect the app itself \\
+        QA-4 & The most important is that they can use and purchase & This integration must be done fast and careful
+        so no mistakes shows up. \\
+        QA-5 & They just want to easily and secure pay, it does not matter how it works & The compliance with payment regulations is a must, since any mistake can costs huge fines
+        and damage to the image of the company. \\
+        QA-6 & They don't want to wast time with loading pages & The loading time can be fixed once there is a structure that allows
+        loading in the first place.  \\
+        QA-7 & They want to get confirmation that everything worked fine. & The communication between the \gls{API} and the payment provider show comply with all existing regulations. 
+        Push notification can be added once the main feature works. \\
+        QA-8 & That is something that they don't want to see, but want to make sure that it exists & Since the payment is processed by the third party operator, all concerns should be addressed to them
+        and specified in the SLA \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{assets/quality_tree.png}
