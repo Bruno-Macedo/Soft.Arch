@@ -1,6 +1,5 @@
 \newacronym{fao}{FAO}{Food and Agriculture Organization of the United Nations}
 \newacronym{un}{UN}{United Nations}
-\newacronym{api}{API}{Application Programming Interface}
 
 \newglossaryentry{user} {
     name={User},
@@ -42,48 +41,42 @@
 \newglossaryentry{activity diagram} {
     name={Activity Diagram},
     description={This kind of diagram shows the behavior of a system, it depicts in a graphical fashion 
-    the logic of a single use case \cite{refinbook:Baresi2009}}
+    the logic of a single use case [\cite{refinbook:Baresi2009}]}
 }
 \newglossaryentry{class diagram} {
     name={Class Diagram},
     description={This kind of diagram presents the structure of a system with its classes, attributes,
-    methods and relationships\cite{refonline:IBMCD}}
+    methods and relationships [\cite{refonline:IBMCD}]}
 }
 \newglossaryentry{use case diagram} {
     name={Use Case Diagram},
     description={This kind of diagram presents the main requirements and functionalitiesPa of a systems. It displays
-    a simplified overview of core purpose of the application \cite{refart:YWRUS}}
+    a simplified overview of core purpose of the application [\cite{refart:YWRUS}]}
 }
 \newglossaryentry{mobile payment gateway} {
     name={Mobile Payment Gateway},
     description={Those services works as an intermediary between customer, merchant and bank/credit card company. 
     Here a payment request is sent to the gateway and forwarded to the approval instances. The core functionality 
-    of those gateways is the cryptography within the communication steps\cite{refonline:VPGI}}
+    of those gateways is the cryptography within the communication steps [\cite{refonline:VPGI}]}
 }
 
 \newglossaryentry{federated login} {
     name={Federated Login},
     description={Authentication method in which users use existing accounts to gain access to another domains or systems
     without the need of creating new credentials. The authenticity of a user is attested by service and granted to another 
-    \cite{refonline:MRFL}}
+    [\cite{refonline:MRFL}]}
 }
 \newglossaryentry{system response} {
     name={System Response},
-    description={The output of a system after an input \cite{refonline:HWHE}.
-    \cite{refonline:MRFL}}
-}
-\newglossaryentry{API} {
-    name={Application Programming Interface - API},
-    plural={APIs},
-    description={Software intermediary that promotes the communication between different systems/applications/
-    softwares\cite{refonline:MSAPI}}
+    description={The output of a system after an input [\cite{refonline:HWHE}].
+    [\cite{refonline:MRFL}]}
 }
 
 \newglossaryentry{wrapper} {
     name={Wrapper},
     plural={wrappers},
     description={Element used to encapsulate the complexity of one entity so it can be processed by another entity 
-    \cite{refonline:techwrap}}
+    [\cite{refonline:techwrap}]}
 }
 
 \newglossaryentry{microservice} {
@@ -91,38 +84,38 @@
     plural={microservices},
     description={Software architecture approach made of small independent services used to communicate with other
     resources like APIs. The advantage of using this architecture is its scalability and maintainability, since 
-    each service is responsible for a very small group of correlated tasks \cite{refonline:awsmicro}}
+    each service is responsible for a very small group of correlated tasks [\cite{refonline:awsmicro}]}
 }
 
 \newglossaryentry{API Gateway} {
     name={API Gateway},
     plural={API Gateways},
     description={Server used an single entry point into a system. It forwards requests to the used service. It is 
-    broadly used for authentication, auditing and logging services \cite{refonline:crpag}}
+    broadly used for authentication, auditing and logging services [\cite{refonline:crpag}]}
 }
 
 \newglossaryentry{Load Balancer} {
     name={Load Balancer},
     description={Device used to distribute traffic/resource/request across different servers, so one of them
-    are not overloaded \cite{refonline:nglb}}
+    are not overloaded [\cite{refonline:nglb}]}
 }
 
 \newglossaryentry{bots} {
     name={bots},
     description={Short for robot. It is a software that performs automated and repetitive tasks. It is usually
     controlled by a malicious actor who targets a network or service. They can be used consume resources
-    and make a service unavailable, steal credentials and other attacks \cite{refonline:kpbot}}
+    and make a service unavailable, steal credentials and other attacks [\cite{refonline:kpbot}]}
 }
 
 \newglossaryentry{Intercepting Validator} {
     name={Intercepting Validator},
     description={Mechanism used to check if user's input (data or file) corresponds to the criteria defined in
-    the app. Non-conform input are discarded before even reaching the app \cite{refonline:kpbot}}
+    the app. Non-conform input are discarded before even reaching the app [\cite{refonline:kpbot}]}
 }
 
 \newglossaryentry{risk assessment} {
     name={Risk Assessment},
-    description={Report used to identify risk/weakness that may exist in a project. \cite{refclas:smvkl11}}
+    description={Report used to identify risk/weakness that may exist in a project. [\cite{refclas:smvkl11}]}
 }
 
 % here goes to the description
@@ -145,7 +138,7 @@
     name=\glslink{SLA}{Service Level Agreement (\gls{SLA})},
     description={Contract between a service provider and a consumer regarding the expected level of service that is accepted.
     This contract is based on defined metrics, measures to remediate occurring problems and penalties if the contracted
-    level is not achieved \cite{refmisc:SOSLA} }
+    level is not achieved [\cite{refmisc:SOSLA}] }
 }
 
 % here goes to the acronym
@@ -157,5 +150,19 @@
     description=\glslink{SLA2}{Service Level Agreement}
 }
 
+\newglossaryentry{API2}{
+    name=\glslink{API}{Application Programming Interface (\gls{API})},
+    plural={APIs},
+    description={Software intermediary that promotes the communication between different systems/applications/
+    softwares [\cite{refonline:MSAPI}]}
+}
+
+\newglossaryentry{API}{
+    type=\acronymtype,
+    name=API,
+    first={Application Programming Interface (API)\glsadd{API2}},
+    see=[Glossary:]{\gls{API2}}, 
+    description=\glslink{API2}{Application Programming Interface}
+}
 
 % update API
