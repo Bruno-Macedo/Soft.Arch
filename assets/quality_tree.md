@@ -21,3 +21,22 @@
 			* QA-5 -- (H-L)
 			* QA-8 -- (H-L)
 @endmindmap
+
+
+@startmindmap
+* Quality Attribute
+	* 1. Usability
+		* Ease-of-use
+			* QA-1
+			* QA-2
+			* QA-3
+	* 2. Interoperability
+		* Exchange data
+			* QA-4
+			* QA-5
+	* 4. Security
+		* Secure Communication
+			* QA-4
+			* QA-5
+			* QA-8
+@endmindmap

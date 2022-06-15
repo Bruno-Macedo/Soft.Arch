@@ -15,7 +15,6 @@ The priority of each element will be expressed using the following notation:
 it is, the latter want to build something what achieves a goal. For that reason is the interpretation of the priority sometimes
 so different, according to which group has been asked.
 
-
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{assets/quality_tree.png}
@@ -23,13 +22,13 @@ so different, according to which group has been asked.
     \label{fig:quality_tree}
 \end{figure}
 
-
+The next table presents the reason for the previous categorization regarding the priority of each quality attribute.
 
 \begin{table}[H]
     \setstretch{1.0}
     \begin{tabularx}{\textwidth}{lXX}
         \toprule
-        ID & For \Glsplural{user} & For Development Team  \\
+        ID & Reasoning for \Glsplural{user} & Reasoning for Development Team  \\
         \midrule
         QA-1 & All important information should be there so his shop can be well promoted & 
         An initial registration with filter for the input is important, but aesthetically details are
@@ -92,10 +91,10 @@ the needs our \glsplural{stakeholder} [\cite{refbook:DSHC}].
         in a \gls{federated login} & UC-1 \\
         QA-5 & Interoperability & A \gls{client} can pay the order using a \gls{mobile payment gateway} (e.g. Stripe, Square, PayPay, 
         SecurePay) & UC-4 \\
-        QA-5 & Performance & A \gls{client} registers his/her e-mail address and can immediately browse in the app. & UC-1 \\
-        QA-6 & Performance & A \gls{client} opens the app and he can immediately search for products or \glsplural{provider}. & UC-2 \\
-        QA-7 & Performance & A \gls{client} chooses a \gls{provider} and places his order. After the confirmation
-        of payment, a push-message is displayed in the app confirming the purchase. & UC-3 \\
+        %QA-5 & Performance & A \gls{client} registers his/her e-mail address and can immediately browse in the app. & UC-1 \\
+        %QA-6 & Performance & A \gls{client} opens the app and he can immediately search for products or \glsplural{provider}. & UC-2 \\
+        %QA-7 & Performance & A \gls{client} chooses a \gls{provider} and places his order. After the confirmation
+        %of payment, a push-message is displayed in the app confirming the purchase. & UC-3 \\
         QA-8 & Security & The payment process should be secure and within the app. It should also give the \gls{client} the feeling
         of security. The \gls{client} inserts his payment information it is processed by the payment operator. & UC-4 \& QA-5 \\
         \bottomrule
@@ -116,6 +115,8 @@ The defined quality attributes are represented in the following scenarios:
         \toprule
         \multicolumn{1}{|c|}{\textbf{Scenario}} & \multicolumn{3}{|c|}{\textbf{Value}} \\
         \midrule
+        \multicolumn{1}{|c|}{ID} & \multicolumn{1}{|c|}{QS-1} & \multicolumn{1}{|c|}{QS-2} & \multicolumn{1}{|c|}{QS-3}  \\
+        \hline
         Source & \Gls{provider} & Registered \Gls{provider} & \Gls{client}  \\
         \hline
         Stimulus & wants to register his shops & wants to make a last minute offer & wants to search/filter offers \\
@@ -142,7 +143,8 @@ The defined quality attributes are represented in the following scenarios:
 %         \hline
 %         \toprule
 %         \multicolumn{1}{c}{Scenario} & \multicolumn{1}{c}{Value} \\
-%         \midrule
+%            \multicolumn{1}{|c|}{ID} & \multicolumn{1}{|c|}{QS-1} & \multicolumn{1}{|c|}{QS-2} & \multicolumn{1}{|c|}{QS-3}  \\
+%            \hline
 %         Source & \gls{provider} \\
 %         Stimulus & wants to register his shops \\
 %         Artifact & app \\
@@ -180,6 +182,8 @@ The defined quality attributes are represented in the following scenarios:
         \toprule
         \multicolumn{1}{|c|}{\textbf{Scenario}} & \multicolumn{2}{|c|}{\textbf{Value}} \\
         \midrule
+        \multicolumn{1}{|c|}{ID} & \multicolumn{1}{|c|}{QS-4} & \multicolumn{1}{|c|}{QS-5}  \\
+        \hline
         Source & \Gls{client} & \Gls{client}  \\
         \hline
         Stimulus & wants register using a \gls{federated login} & wants to pay using existing mobile payment account \\
@@ -225,30 +229,32 @@ The defined quality attributes are represented in the following scenarios:
 %     \end{tabularx}
 % \end{table}
 
-\begin{table}[H]
-    \setstretch{1.0}
-    \begin{tabularx}{\textwidth}{|c|X|X|X|}
-        \hline
-        \multicolumn{4}{c}{\textbf{Performance}} \\
-        \hline
-        \toprule
-        \multicolumn{1}{|c|}{\textbf{Scenario}} & \multicolumn{3}{|c|}{\textbf{Value}} \\
-        \midrule
-        Source & \Gls{client} & \Gls{client} & \Gls{client}  \\
-        \hline
-        Stimulus & wishes to create an account & wants to search for a \gls{provider} & places an order \\
-        \hline
-        Artifact & app & app & app \\
-        \hline
-        Environment & weekend between 3 and 7 PM & peak period, between 6 and 7 pm on a Friday & peak period, between 6 and 7 pm on a Friday \\
-        \hline
-        Response & immediate access to the app  & immediate access to the offers  & confirmation of payment / payment declined \\
-        \hline
-        Response Measure & time between confirmation and access & how quickly does the client's device get update of availabilities 
-        & How long did take until the client get the confirmation/declined of payment? \\
-        \bottomrule
-    \end{tabularx}
-\end{table}
+% \begin{table}[H]
+%     \setstretch{1.0}
+%     \begin{tabularx}{\textwidth}{|c|X|X|X|}
+%         \hline
+%         \multicolumn{4}{c}{\textbf{Performance}} \\
+%         \hline
+%         \toprule
+%         \multicolumn{1}{|c|}{\textbf{Scenario}} & \multicolumn{3}{|c|}{\textbf{Value}} \\
+%         \midrule
+%         \multicolumn{1}{|c|}{ID} & \multicolumn{1}{|c|}{QS-6} & \multicolumn{1}{|c|}{QS-7} \\
+%         \hline
+%         Source & \Gls{client} & \Gls{client} & \Gls{client}  \\
+%         \hline
+%         Stimulus & wishes to create an account & wants to search for a \gls{provider} & places an order \\
+%         \hline
+%         Artifact & app & app & app \\
+%         \hline
+%         Environment & weekend between 3 and 7 PM & peak period, between 6 and 7 pm on a Friday & peak period, between 6 and 7 pm on a Friday \\
+%         \hline
+%         Response & immediate access to the app  & immediate access to the offers  & confirmation of payment / payment declined \\
+%         \hline
+%         Response Measure & time between confirmation and access & how quickly does the client's device get update of availabilities 
+%         & How long did take until the client get the confirmation/declined of payment? \\
+%         \bottomrule
+%     \end{tabularx}
+% \end{table}
 
 
 % \begin{table}[H]
@@ -292,6 +298,8 @@ The defined quality attributes are represented in the following scenarios:
         \toprule
         \multicolumn{1}{|c|}{\textbf{Scenario}} & \multicolumn{2}{|c|}{\textbf{Value}} \\
         \midrule
+        \multicolumn{1}{|c|}{ID} & \multicolumn{1}{|c|}{QS-6} & \multicolumn{1}{|c|}{QS-7}  \\
+        \hline
         Source & \Gls{client} & \Gls{client} \\
         \hline
         Stimulus & clicks on registration using an existing login & click on pay using an existing mobile payment account \\
@@ -303,7 +311,7 @@ The defined quality attributes are represented in the following scenarios:
         Response & authentication succeed or failed & confirmation / declined \\
         \hline
         Response Measure & Required time and effort to intercept and/or block requests (create \glsfirst{DoS})
-        & Extension to image damage of the app and of the company in case of attack \\
+        & Extension and impact to image/damage of the app/company in case of attack \\
         \bottomrule
     \end{tabularx}
 \end{table}
