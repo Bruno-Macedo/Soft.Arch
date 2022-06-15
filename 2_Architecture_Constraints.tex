@@ -1,4 +1,4 @@
-\section{Architecture Constraints}
+\section{Constraints}
 
 In this project we must distinguish between Technical (CT-T-\#) and Business (CT-B-\#) Constraints. The former describes specific elements
 of the project, like programming language, released platform (e.g. operational systems) and technical decisions related to 
@@ -12,12 +12,12 @@ tables describes the technical and the business constraints of this project:
         \multicolumn{3}{c}{\textbf{Technical}} \\
         \hline
         \toprule
-        \multicolumn{1}{c}{Id} & \multicolumn{1}{c}{Constraint} & \multicolumn{1}{c}{Description} \\
+        \multicolumn{1}{c}{Id} & \multicolumn{1}{c}{Constraint} & \multicolumn{1}{c}{Reasoning} \\
         \midrule
-        CT-T-1 & Programming Language & A multilanguage (Java, Kotlin, iOS, Swift) approach increases
+        CT-T-1 & Programming Language - Kotlin & A multilanguage (Java, Kotlin, iOS, Swift) approach increases
         the maintainability burden and consequently the costs (see CT-B-4). It can also interfere with
         compatibility with different kind of device.s  \\ 
-        CT-T-2 & Platform & Offering the application for different platforms (iOS and/or Android) increases
+        CT-T-2 & Platform - Android & Offering the application for different platforms (iOS and/or Android) increases
         costs for maintainability and requires a bigger team. Since the prototype should run during the
         first year mainly to gather information about consumer behavior the costs in this test phase can
         increase rapidly if we decide to develop for the most common platforms. \\ 
@@ -29,6 +29,8 @@ tables describes the technical and the business constraints of this project:
         CT-T-5 & Login & Using existing \gls{federated login} decreases development time, but like CT-T-4 demands
         fully interoperability of the app with appliances. It may also be a problem if the \gls{client}
         don't trust this kind of login. \\
+        CT-T-6 & Amount of server & The existing budget allow us to have only one full operating server to handle
+        the input data. \\
         \bottomrule
     \end{tabularx}
 \end{table}
@@ -42,49 +44,21 @@ tables describes the technical and the business constraints of this project:
         \toprule
         \multicolumn{1}{c}{Id} & \multicolumn{1}{c}{Constraint} & \multicolumn{1}{c}{Reasoning} \\
         \midrule
-        CT-B-1 & Time to first prototype release & How much time is acceptable from starting the project
-        until we have a functional prototype that can be used by our user? \\
-        CT-B-2 & Development Team & The existing team can cover the main existing platforms, but their availability
-        may be restricted to due work on other projects Specially for the maintainability of the app it can represents
-        a problem. \\
-        CT-B-3 & Analytical Team & During running phase of the prototype it will be necessary to have a team in charge
-        of evaluating and interpreting the collected data, to find out if the goals are being achieved. \\
-        CT-B-4 & Budget & Since this application falls in the category ```middle app'' according to [\cite{refonline:SPDLOAD}]
-        the available budget of US\$ 150.000 should cover the development of the main functionality and the data analysis 
-        (see CT-B-3) \\
+        CT-B-1 & Time to first prototype release - Maximal 1 year & To stay on the budget the first release should
+        be ready within one year after the approval \\
+        CT-B-2 & Development Team - 4 Dev + 1 Sys-Admin & Most of the development team members is allocated on
+        other projects and cannot be changed. They should be in charge of the development and maintainability. \\
+        CT-B-3 & Analytical Team - 1 person & During running phase of the prototype it will be necessary to have someone 
+        in charge of evaluating and interpreting the collected data, to find out if the goals are being achieved. \\
+        CT-B-4 & Budget & For this kind of project the maximum budget is US\$ 150.000. It should cover the development of 
+        the main functionality and the data analysis (see CT-B-3).  ```middle app'' according to [\cite{refonline:SPDLOAD}] \\
+        CT-B-5 & Security and Trust of third party resources & Since login and payment will be processed by third party providers,
+        \gls{federated login} and \gls{API Gateway}, a lack of security on their side can cause damage to the reputation of 
+        our company. \\
         \bottomrule
     \end{tabularx}
 \end{table}
 
 
 
-
-%https://medium.com/@janerikfra/architectural-drivers-in-modern-software-architecture-cb7a42527bf2 (important)
-% https://www.ecs.csun.edu/~rlingard/COMP684/Example2SoftArch.htm
-% https://upcommons.upc.edu/bitstream/handle/2099.1/18373/90629.pdf
-
-% Registration Process for Clients QA1
-% Registration Process for Restaurants/Backery QA2
-% Login Clients QA3
-% Login Restaurant/Backery QA4
-% Upload offers QA6
-% Purchase QA6
-% Receive Confirmation QA7
-
-% Performance
-% After upload offer, how long until displyed QA8
-
-% Usuability
-% Registration for Client: using existing account or Name/email
-% Registration for Restaurant/bakery: Upload name, picture, location and type of products
-
-% Purchase client: choose available RA-options
-% Payment: register card, use existing accounts (paypal/google pay)
-
-% Upload offer RA: registered RAs activate that they are offering
-% Receive order: after payment confirmed, RA recieves order
-
-
-% Availability
-
-% Modifiability
+% add the not used quality attributes

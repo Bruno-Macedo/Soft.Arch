@@ -23,14 +23,7 @@
     %\addcontentsline{toc}{section}{\listfigurename}
     %\listoffigures
     \begin{linenumbers}
-      \newpage
-      \clearpage
-      \printglossary[type=acronym,title=Abbreviations,toctitle=Abbreviations]
-      \clearpage
-      \newpage
-      \clearpage
-      \printglossary[title=Glossary,toctitle=Glossary]
-      \clearpage
+
       \include{1_Introduction_goals}
       %\include{2_4+1_arch_view}
       \include{2_Architecture_Constraints}
@@ -51,6 +44,14 @@
         \bibliography{reference}
       \endgroup
       \bibliographystyle{apalike}
+      \newpage
+      \clearpage
+      \printglossary[type=acronym,title=Abbreviations,toctitle=Abbreviations]
+      \clearpage
+      \newpage
+      \clearpage
+      \printglossary[title=Glossary,toctitle=Glossary]
+      \clearpage
     \end{linenumbers}
   
 
