@@ -26,11 +26,31 @@ not related to the main objective: purchase a product or upload a product.
 %     \end{tabularx}
 % \end{table}
 
+To guarantee that our \glsplural{client} could get an easy and fast update from the \glsplural{provider} we choose 
+the \textit{observer} pattern over the wellknown \glsfirst{MVC}. The former allow us to have focus on the implementation
+on the different sides of our app, provider and clients. The latter has an inherent development burden for simple user
+interfaces. Using \gls{MVC} for this first prototype would increase the difficult level and the time needed to provide a 
+functional. 
 
-% Please add the following required packages to your document preamble:
-% \usepackage{booktabs}
-% \usepackage{multirow}
-% \usepackage{graphicx}
+Below there is a simple depict of this pattern:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{assets/observer.jpg}
+    \caption{Observer Pattern}
+    \label{fig:simple_observer}
+\end{figure}
+
+The next diagram shows a more detailed version of the of the \textit{observer} pattern. This view intends to assist the development
+team with the implementation of this pattern.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{assets/class_observer.jpg}
+    \caption{Observer Pattern}
+    \label{fig:class_observer}
+\end{figure}
+
 \begin{table}[H]
     \setstretch{1.0}
     \begin{tabularx}{\textwidth}{|c|c|X|c|}
@@ -38,11 +58,14 @@ not related to the main objective: purchase a product or upload a product.
     \multicolumn{1}{c}{Tactict} & \multicolumn{1}{c}{Pattern} & \multicolumn{1}{c}{Motivation} & \multicolumn{1}{c}{QA} \\
     \midrule
     \multicolumn{1}{|c|}{\multirow{2}{*}{Support User Initiative}} & Observer & The interaction of the users is a main factor
-    of our app. We want them to have fully control of their actions either by cancelling or by resuming an action.
+    of our app. We want them to have fully control of their actions either by cancelling or by resuming an action. The updates
+    by the provider should be directly sent to the clients in a simple fast fashion.
     & \multirow{3}{*}{QA-1} \\
     \multicolumn{1}{|c|}{} & Lazy Registration & Avoid having to memorize another password and username may increase 
     the acceptance of the user. With this pattern we allow them also to browse in the app and seeing what is available 
-    without being registered \cite{refonline:IDUI}. This may give a glimpse of what they get if they join us. &   \\
+    without being registered \cite{refonline:IDUI}. This may give a glimpse of what they get if they join us. The alternative
+    is to have the user first register his credentials and then browser in the app. This burden would only make the get-to-know
+    process slow and difficult. &  \\
     Support System Initiative & Observer & By each upload from the \glsplural{provider} we want our \glsplural{client} 
     to have it on his device, without having to "ask" for it.  &  \\ 
     \bottomrule
@@ -50,20 +73,15 @@ not related to the main objective: purchase a product or upload a product.
 \end{table}
 
 
+
+
 \subsection{Solution for Interoperability}
 
-The communication with the third party components should during the whole lifetime of the App reliable. Since we are dealing with
-two different services, \gls{mobile payment gateway} and \gls{federated login}, we will describe the integration processes 
+The communication with the third party components should during the whole lifetime of the App reliable. Since we are dealing 
+with two different services, \gls{mobile payment gateway} and \gls{federated login}, we will describe the integration processes 
 according to each specification.
 
-From the third party applications we expect the following interaction:
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\textwidth]{assets/sequence_login_payment.jpg}
-    \caption{Sequence of actions with third party applications}
-    \label{fig:sequence_login_payment}
-\end{figure}
 
 \subsubsection{Payment Gateway}
 

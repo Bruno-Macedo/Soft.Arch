@@ -39,34 +39,36 @@ of our app. The following picture should give them a shallow view of the interac
     \end{tabularx}
 \end{table}
 
+A description of the existing elements will be described in our use case in table \ref{table_use_case}.
 More elements of this view will be presented while discussing the internal decisions in chapter \ref{Patterns_Tacticts}. 
+
+\newpage
 
 \subsection{Structural view}
 
 % put only big graphic and use it for on the 4+1 view
 
-This following graphics are addressed to our technical team. It provides a deeper view of the model shown in
+This following graphics are addressed to our technical team. They provide a deeper view of the model shown in
 \ref{fig:business_context}. The once black-boxed elements showed above are now white-boxed so our development
 team becomes a better understanding of the relevant components of the app.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{assets/technical_context.jpg}
+    \includegraphics[width=0.4\textwidth]{assets/technical_context.jpg}
     \caption{Technical Context}
     \label{fig:technical_context}
 \end{figure}
 
-We choose a \gls{class diagram} to provide our our development team a further view of the structural elements 
-of the project. It canso help our other stakeholders to understand what are 
- al
+For the following graphic we choose a \gls{class diagram} to provide our development team a further view of the
+structural elements of the project. This first class diagram gives a simple description of the classes that can
+exist in the app.
+
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{assets/simple_classes_CD.jpg}
+    \includegraphics[width=1\textwidth]{assets/simple_classes_CD.jpg}
     \caption{Level 1 - Class Diagramm}
     \label{fig:simple_class_diagram}
 \end{figure}
-
-
 
 % The first part of the this diagram describes the element within the \gls{provider}. It contains one or more addresses and it 
 % can offer one or more products. A provider will also fall into the category restaurant, bakery or pastry.
@@ -103,7 +105,8 @@ of the project. It canso help our other stakeholders to understand what are
 \thispagestyle{lscape}
 \begin{landscape}
 
-This final graphic show the whole classes in combination:
+Zooming down the classes we presented before, we can see how they are build with its attributes, methods and
+interaction with other elements.
 
 \begin{figure}[H]
     \centering
@@ -113,8 +116,6 @@ This final graphic show the whole classes in combination:
 \end{figure}
 
 \end{landscape}
-
-
 
 \subsection{Behavior view}
 
@@ -126,6 +127,17 @@ main stakeholders, \glsplural{provider} and \glsplural{client}, the starting pro
     \includegraphics[width=1\textwidth]{assets/login_AC.jpg}
     \caption{Login procedures}
     \label{fig:login_register}
+\end{figure}
+
+To help understanding the above process we created the following \gls{sequence diagram} that depict the communication flow 
+with the third party providers. 
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{assets/sequence_login_payment.jpg}
+    \caption{Sequence of actions with third party applications}
+    \label{fig:sequence_login_payment}
 \end{figure}
 
 

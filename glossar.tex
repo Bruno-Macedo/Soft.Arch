@@ -53,12 +53,23 @@
     description={This kind of diagram presents the main requirements and functionalitiesPa of a systems. It displays
     a simplified overview of core purpose of the application [\cite{refart:YWRUS}]}
 }
+
 \newglossaryentry{mobile payment gateway} {
     name={Mobile Payment Gateway},
     description={Those services works as an intermediary between customer, merchant and bank/credit card company. 
     Here a payment request is sent to the gateway and forwarded to the approval instances. The core functionality 
     of those gateways is the cryptography within the communication steps [\cite{refonline:VPGI}]}
 }
+
+\newglossaryentry{sequence diagram} {
+    name={Sequence Diagram},
+    description={This kind of diagram presents the interaction of the elements over time as the communication
+    flows from one direction to the other. It also displays which objects communicate with each other and the 
+    request that starts the process  [\cite{refmisc:sparxsD}]}
+}
+
+
+
 
 \newglossaryentry{federated login} {
     name={Federated Login},
@@ -164,5 +175,21 @@
     see=[Glossary:]{\gls{API2}}, 
     description=\glslink{API2}{Application Programming Interface}
 }
+% =====
+\newglossaryentry{MVC2}{
+    name=\glslink{MVC}{Model-View-Controller  (\gls{MVC})},
+    description={Pattern used in software architecture for the development of user interfaces. In this pattern information
+    is presented to the user differently from how it is show internally \cite{refmisc:wikimvc,} }
+}
+
+\newglossaryentry{MVC}{
+    type=\acronymtype,
+    name=MVC,
+    first={Model-View-Controller (MVC)\glsadd{MVC2}},
+    see=[Glossary:]{\gls{MVC2}}, 
+    description=\glslink{MVC2}{Model-View-Controller}
+}
+    
+
 
 % update API
