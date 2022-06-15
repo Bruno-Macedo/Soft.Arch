@@ -98,7 +98,7 @@ within short period of time, we want to concentrate our efforts on the elements 
 
 \begin{table}[H]
     \setstretch{1.0}
-    \begin{tabularx}{\textwidth}{|c|c|X|c|}
+    \begin{tabularx}{\textwidth}{|X|c|X|c|}
         \toprule
         \multicolumn{1}{c}{Tactict} & \multicolumn{1}{c}{Pattern} & \multicolumn{1}{c}{Motivation} & \multicolumn{1}{c}{QA} \\
         \midrule
@@ -123,7 +123,7 @@ party operator, as seen in the picture \ref{fig:sequence_login_payment}.
         \toprule
         \multicolumn{1}{c}{Tactict} & \multicolumn{1}{c}{Pattern} & \multicolumn{1}{c}{Motivation} \\
         \midrule
-        \textbf{\Gls{microservice}} & \gls{API Gateway} & Increase of security, so the microservice is not directly
+        \textbf{\Gls{microservice}} & \gls{API Gateway} & Increase of security so the microservice is not directly
         exposed to the external world. It reduces the complexity of the microservice, since the gateway will have to deal
         with data transfer rate, tokens and other activities. Dealing with failures would also be handled and logged
         by the microservice \cite{refonline:javtop}. & QA-2\\
@@ -211,8 +211,9 @@ Below there is a graphic that explains in an easy fashion the flow process of th
     \end{tabularx}
 \end{table}
 
-The choice for this validator was based on its costs and on its easy implementation. A more complex solution like an Intrusion
-Prevention System would increase the compatibility burden and demands a more complex structure.
+The choice for this validator was based on its cost and on its easy implementation. A more complex solution like an Intrusion
+Prevention System would increase the compatibility burden, demands a more complex structure and increases the maintainability 
+costs.
 
 % \begin{table}[H]
 %     \setstretch{1.0}
