@@ -30,14 +30,12 @@ To guarantee that our \glsplural{client} could get an easy and fast update from 
 the \textit{observer} pattern over the wellknown \glsfirst{MVC}. The former allow us to have focus on the implementation
 on the different sides of our app, provider and clients. The latter has an inherent development burden for simple user
 interfaces. Using \gls{MVC} for this first prototype would increase the difficult level and the time needed to provide a 
-functional. 
-
-Below there is a simple depict of this pattern:
+functional. Below there is a simple depict of this pattern:
 % need to improve
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{assets/observer.jpg}
-    \caption{Observer Pattern}
+    \includegraphics[width=0.3\textwidth]{assets/observer.jpg}
+    \caption{Observer Pattern simple explained}
     \label{fig:simple_observer}
 \end{figure}
 
@@ -47,7 +45,7 @@ team with the implementation of this pattern.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{assets/class_observer.jpg}
-    \caption{Observer Pattern}
+    \caption{Observer Pattern with Classes}
     \label{fig:class_observer}
 \end{figure}
 
@@ -71,6 +69,7 @@ team with the implementation of this pattern.
     \bottomrule
     \end{tabularx}
 \end{table}
+
 
 \subsection{Solution for Interoperability}
 
@@ -138,7 +137,7 @@ services, including ours.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{assets/simple_api_gateway.jpg}
-    \caption{Observer Pattern}
+    \caption{Federation Identity}
     \label{fig:simple_api_gateway}
 \end{figure}
 
@@ -148,7 +147,7 @@ When we white-box the previous graphic we get a deeper view on how the \gls{API 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{assets/complex_api_gateway.jpg}
-    \caption{Observer Pattern}
+    \caption{Environment Depict of Federation Identity}
     \label{fig:complex_api_gateway}
 \end{figure}
 
