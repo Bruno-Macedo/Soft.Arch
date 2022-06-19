@@ -37,13 +37,7 @@
   \include{7_Risk_and_Technical_Debt}
   %\include{12_Glossary}
   \nocite{*}
-  \begingroup
-    \setlength{\bibsep}{5pt}
-    \setstretch{1}
-    \bibliography{reference}
-  \endgroup
-  \bibliographystyle{apalike}
-  \newpage
+
   \clearpage
   \printglossary[title=Glossary,toctitle=Glossary]
   \clearpage
@@ -51,5 +45,12 @@
   \clearpage
   \printglossary[type=acronym,title=Abbreviations,toctitle=Abbreviations]
   \clearpage
+  \begingroup
+    \setlength{\bibsep}{4pt}
+    \setstretch{1}
+    \bibliography{reference}
+    \endgroup
+  \bibliographystyle{apalike}
+  %\newpage
     
 \end{document}
