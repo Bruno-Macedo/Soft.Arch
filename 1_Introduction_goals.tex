@@ -4,7 +4,7 @@ According to the \acrfull{fao} in 2019, 931 millions tonne of food were wasted [
 environmental, but especially social consequences. In a world where approximately 9.9\% of the [\cite{refart:AAHWH}]
 population suffers from hunger that waste percentage sounds paradoxical.
 
-According to \acrfull{un} 5\% of the global food loss and waste comes from restaurants [\cite{refart:UNSP}]. 
+As reported by the \acrfull{un} 5\% of the global food loss and waste comes from restaurants [\cite{refart:UNSP}]. 
 The solution for this problem must be locally applied so its effects can be seen in a global structure. To do 
 so we propose to develop a mobile application that connects restaurants, bakeries and or pastries to clients. The
 former would offer their remaining products, which are still consumable, prior to the closing time, to a small price
@@ -28,6 +28,18 @@ With our project we want to achieve the following goals:
 
 To make the easy to read we will use the pronouns ```he''' and ``his'' every time we refer to a single person.
 
+After having an general idea on what the \gls{app} should do, we create the following sketch to promote a simple visual 
+example of our product when in use. This picture was shown to our intended \glsplural{user} and to the boarding committee 
+so they could have a idea of what to expect.
+ 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{assets/sketch.jpeg}
+    \caption{Sketch of the first idea}
+    \label{fig:sketch}
+\end{figure}
+
+
 \subsection{Design Purpose}
 
 The main purpose of this architecture is creating an exploratory prototype of an \gls{app}. We aim to test it with potential 
@@ -37,13 +49,16 @@ This prototype will also make it feasible to identify unknown needs an wishes of
 can eventually increase the scope of functionality. Exploring this domain will also provide us with information regarding 
 the behavior of our target group when it comes to buying and serving food that would be wasted, but is still consumable.
 
+
+\newpage
 \subsection{Functional Requirements} \label{Requirement_Overview}
 
 The following functionalities describe the basic requirement for the \gls{app}:
 
-\begin{table}[H]
-    \setstretch{1.0}
+%\begin{table}[H]
     \begin{tabularx}{\textwidth}{llX}
+        %\setstretch{1.0}
+
     \toprule
     Id & Requirement & Description  \\
     \midrule
@@ -58,7 +73,7 @@ The following functionalities describe the basic requirement for the \gls{app}:
     F-8 & Check orders & A registered \gls{provider} can check all existing orders targeting his/her shops.\\
     \bottomrule
     \end{tabularx}
-\end{table}
+%\end{table}
 
 \begin{table}[H]
     \setstretch{1.0}
@@ -83,7 +98,7 @@ The following functionalities describe the basic requirement for the \gls{app}:
     \end{tabularx}
 \end{table}
 
-
+\newpage
 The following \gls{use case diagram} should give our \glsplural{stakeholder} an overview of the primary functionality
 of the app:
 
@@ -94,7 +109,6 @@ of the app:
     \label{fig:preliminary_use_case}
 \end{figure}
 
-\newpage
 \subsection{Quality Goals}
 
 The key qualities of this app are described in the table below:
