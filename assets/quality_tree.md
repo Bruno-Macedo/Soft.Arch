@@ -27,16 +27,15 @@
 * Quality Attribute
 	* 1. Usability
 		* Ease-of-use
-			* QA-1 -- (H-M)
-			* QA-2 -- (H-L)
-			* QA-3 -- (H-L)
+			* QA-1.1 -- (H-M)
+			* QA-1.2 -- (H-L)
+			* QA-1.3 -- (H-L)
 	* 2. Interoperability
 		* Exchange data
-			* QA-4 -- (M-H)
-			* QA-5 -- (M-H)
+			* QA-2.1 -- (M-H)
+			* QA-2.2 -- (M-H)
 	* 4. Security
 		* Secure Communication
-			* QA-4 -- (H-L)
-			* QA-5 -- (H-L)
-			* QA-8 -- (H-L)
+			* QA-3.1 -- (H-L)
+			* QA-3.2 -- (H-L)
 @endmindmap
