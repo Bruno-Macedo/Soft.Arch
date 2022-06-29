@@ -8,30 +8,12 @@ For each quality attribute we will present the chosen tactics.
 The core of our app is how easy it is to use. We want our user to navigate through it without being overwhelmed with information
 not related to the main objective: purchase a product or upload a product.
 
-% \begin{table}[H]
-%     \setstretch{1.0}
-%     \begin{tabularx}{\textwidth}{|c|c|X|c|}
-%         \toprule
-%         \multicolumn{1}{c}{Tactict} & \multicolumn{1}{c}{Pattern} & \multicolumn{1}{c}{Motivation} & \multicolumn{1}{c}{QA} \\
-%         \midrule
-%         \textbf{Support User Initiative } & Observer & The interaction of the users is a main factor of our app.
-%         We want them to have fully control of their actions either by cancelling or by resuming an action. & QA-1 \\
-%         \textbf{Support User Initiative } & Lazy Registration & Avoid having to memorize another password and username
-%         may increase the acceptance of the user. With this pattern we allow them also to browse in the app and seeing
-%         what is available without being registered \cite{refonline:IDUI}. This may give a glimpse of what they get
-%         if they join us. & QA-1 \\
-%         \textbf{Support System Initiative} & Observer & By each upload from the \glsplural{provider} we want our
-%         \glsplural{client} to have it on his device, without having to "ask" for it. & QA-1  \\
-%         \bottomrule
-%     \end{tabularx}
-% \end{table}
-
 To guarantee that our \glsplural{client} could get an easy and fast update from the \glsplural{provider} we choose 
 the \textit{observer} pattern over the wellknown \glsfirst{MVC}. The former allow us to have focus on the implementation
 on the different sides of our app, provider and clients. The latter has an inherent development burden for simple user
 interfaces. Using \gls{MVC} for this first prototype would increase the difficult level and the time needed to provide a 
 functional. Below there is a simple depict of this pattern:
-% need to improve
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.3\textwidth]{assets/observer.jpg}
@@ -151,32 +133,7 @@ When we white-box the previous graphic we get a deeper view on how the \gls{API 
     \label{fig:complex_api_gateway}
 \end{figure}
 
-
-% \subsection{Solution for Performance}
-
-% % remove this part, since it will not be firstly used
-
-% We want our app to have a fast (no more than 1 second) response time. By clicking on an offer a \gls{client} should
-% have it immediately displayed on his screen. Updated made by \glsplural{provider} should also be promptly available
-% for \glsplural{client} to browse.
-
-% \begin{table}[H]
-%     \setstretch{1.0}
-%     \begin{tabularx}{\textwidth}{|c|c|X|c|}
-%         \toprule
-%         \multicolumn{1}{c}{Tactics} & \multicolumn{1}{c}{Pattern} & \multicolumn{1}{c}{Motivation} & \multicolumn{1}{c}{QA} \\
-%         \midrule
-%         \textbf{Increase Resources} & \gls{Load Balancer} & This maybe implemented if, during the first test phase, we see that
-%         the usage of the app is so high that the existing components become overwhelmed. Specially during peak times we want our 
-%         users to have a smoothly and fast interaction with the app. \Glsplural{provider} and \glsplural{client} should perform their
-%         tasks, either browsing, purchasing or uploading offering without having to wait to get a response. With this
-%         decision all requests would be forwarded to the server that are available avoiding queuing of requests. & QA-3 \\
-%         \bottomrule
-%     \end{tabularx}
-% \end{table}
-
 \newpage
-
 \subsection{Solution for Security}
 
 There are two security concerns that need to be addressed to the users. The first one deals with the authentication
@@ -214,21 +171,3 @@ The choice for this validator was based on its cost and on its easy implementati
 Prevention System would increase the overall security aspect of app but it would also increase the compatibility burden, 
 demands a more complex structure and increases the maintainability costs.
 
-% \begin{table}[H]
-%     \setstretch{1.0}
-%     \begin{tabularx}{\textwidth}{|c|c|X|c|}
-%     \toprule
-%     \multicolumn{1}{c}{Tactict} & \multicolumn{1}{c}{Pattern} & \multicolumn{1}{c}{Motivation} & \multicolumn{1}{c}{QA} \\
-%     \midrule
-%     \multicolumn{1}{|c|}{\multirow{2}{*}{Support User Initiative}} & Observer & The interaction of the users is a main factor
-%     of our app. We want them to have fully control of their actions either by cancelling or by resuming an action.
-%     & \multirow{3}{*}{QA-4} \\
-%     \multicolumn{1}{|c|}{} & Lazy Registration & Avoid having to memorize another password and username may increase 
-%     the acceptance of the user. With this pattern we allow them also to browse in the app and seeing what is available 
-%     without being registered \cite{refonline:IDUI}. This may give a glimpse of what they get if they join us. &   \\
-
-%     Support System Initiative & Observer & By each upload from the \glsplural{provider} we want our \glsplural{client} 
-%     to have it on his device, without having to "ask" for it.  &  \\ 
-%     \bottomrule
-%     \end{tabularx}
-% \end{table}
